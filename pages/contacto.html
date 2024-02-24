@@ -19,94 +19,163 @@
             <nav class="navbar navbar-expand-sm fixed-top custom-navbar">
                 <div class="container-fluid">
                     <a class="navbar-brand me-auto" href="../index.html">
-                        <img class="rounded-circle" src="../assets/img/verdadera_Tijuana_500x500.png" alt="Logo de verdadera Tijuana">
+                        <img class="rounded-circle"
+                            src="../assets/img/verdadera_Tijuana_500x500.png"
+                            alt="Logo de verdadera Tijuana">
                     </a>
-                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon custom-icon">
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto">
-                    <a class="nav-link mx-2" href="../pages/restaurantes.html">Restaurantes</a>
-                    <a class="nav-link mx-2" href="../pages/cafeterias.html">Cafeterias</a>
-                    <a class="nav-link mx-2" href="../pages/atraccionesVidaNocturna.html">Atracciones y Vida Nocturna</a>
-                    <a class="nav-link mx-2" href="../pages/contacto.html">Contacto</a>
+                    <button class="navbar-toggler custom-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon custom-icon">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarNavAltMarkup">
+                        <div class="navbar-nav mx-auto">
+                            <a class="nav-link mx-2"
+                                href="../pages/restaurantes.html">Restaurantes</a>
+                            <a class="nav-link mx-2"
+                                href="../pages/cafeterias.html">Cafeterias</a>
+                            <a class="nav-link mx-2"
+                                href="../pages/atraccionesVidaNocturna.html">Atracciones
+                                y Vida Nocturna</a>
+                            <a class="nav-link mx-2"
+                                href="../pages/contacto.html">Contacto</a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </nav>
         </header>
         <!--Dentro del main se tiene un encabezado que indica de que manera ponerse en contacto, usando un h1 y p.-->
-        <main id="main-contacto">
-            <h1>Ponte en contacto</h1>
-            <p>Si quieres conocer más sobre la ciudad y cotizar un paquete
-                turístico, deja tus datos de contacto en la forma de abajo y el
-                equipo de verdadera Tijuana se pondra en contacto lo más pronto
-                posible.</p>
-            <!--La seccion de contenedor-forma se divide en dos usando dos "div's". El primero es una forma, la cual contiene un campo para el nombre, otro para la fecha de nacimiento, el numero de telefono, un textarea para los comentarios y un boton para enviar la informacion.
-            El siguiente divisor contiene 3 divisiones, dos etiquetas de parrafo y un div, aqui se muestran los logos de los colaboradores acomodadoes esteticamente usando flex.-->
-            <section id="contenedor-forma">
-                <div id="forma">
-                    <form action method="POST">
-                        <label for="name">Nombre Completo:</label>
-                        <input type="text" id="name" name="name" required
-                            placeholder="Pedro Espinoza">
-                        <label for="fechaNacimiento">Fecha de
-                            Nacimiento:</label>
-                        <input type="date" id="fechaNacimiento"
-                            name="fechaNacimiento" required
-                            placeholder="mm/dd/aaaa">
-                        <label for="tel">Número Telefonico:</label>
-                        <input type="tel" name="tel" id="tel" required
-                            placeholder="0000000000">
-                        <label for="comentarios">Comentarios:</label>
-                        <textarea name="comentarios" id="comentarios"
-                            rows="5">Escribe aquí...</textarea>
-                        <input type="submit" value="Enviar">
-                    </form>
-                </div>
-                <div id="marcas">
-                    <p>Marcas con las que colaboramos.</p>
-                    <p>Que esperas para unirte?</p>
-                    <div id="logos-marcas">
-                        <img src="../assets/img/WhatsappIcon.png"
-                            alt="Logo Guzi">
-                        <img src="../assets/img/logo_club_cochis_500x500.png"
-                            alt="Logo Club de Cochis">
-                        <img src="../assets/img/descarga.png"
-                            alt="Logo Bajayummy">
-                        <img src="../assets/img/iconoYAT.png"
-                            alt="Logo Yo Amo Tijuana">
-                        <img src="../assets/img/logoToros.png"
-                            alt="Logo Toros de Tijuana">
-                        <img src="../assets/img/Peninsula-Logo_Icono-circ-g.png"
-                            alt="Logo Plaza Peninsula">
+        <main>
+            <div class="container-fluid px-5 my-5">
+                <div class="row justify-content-center">
+                    <h1>Ponte en contacto</h1>
+                    <p>Si quieres conocer más sobre la ciudad y cotizar un paquete
+                        turístico, deja tus datos de contacto en la forma de abajo y el
+                        equipo de verdadera Tijuana se pondra en contacto lo más pronto
+                        posible.</p>
+                    <div class="col-xl-10">
+                        <div
+                            class="card border-0 rounded-3 overflow-hidden">
+                            <div class="card-body p-0">
+                                <div class="row g-0">
+                                    <div class="col-sm-6 d-none d-sm-block p-4">
+                                        <div class="text-center">
+                                            <div class="h3 fw-light">Punto de
+                                                Reunión</div>
+                                        </div>
+                                        <p>Las caminatas turisticas o paquetes
+                                            turisticos personalizados
+                                            salen de este punto, el dia y la
+                                            hora se acuerda por mensaje
+                                            privado al ponerse en contacto con
+                                            el equipo de Verdadera
+                                            Tijuana.</p>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719.2222974110671!2d-117.03989461940476!3d32.535564946267996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94900b6332979%3A0xa1a875eb7763c81f!2sIglesia%20de%20Nuestra%20Se%C3%B1ora%20de%20Guadalupe%2C%20antigua%20Catedral!5e0!3m2!1sen!2smx!4v1706763548977!5m2!1sen!2smx"
+                                            width="600" height="450"
+                                            style="border:0;" allowfullscreen
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="col-sm-6 p-4">
+                                        <div class="text-center">
+                                            <div
+                                                class="h3 fw-light">Contacto</div>
+                                        </div>
+                                        <form>
+                                            <!-- Nombre Input -->
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control"
+                                                    id="nombre" name="nombre"
+                                                    type="text"
+                                                    placeholder="Escribe tu nombre aquí..."
+                                                    required />
+                                                <label for="nombre">Nombre
+                                                    Completo</label>
+                                            </div>
+
+                                            <!-- Telefono Input -->
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control"
+                                                    id="telefono"
+                                                    name="telefono" type="tel"
+                                                    placeholder="(000)000-0000"
+                                                    required />
+                                                <label for="telefono">Numero de
+                                                    Telefono</label>
+                                            </div>
+
+                                            <!-- Fecha Nacimiento Input-->
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control"
+                                                    id="fechaNacimiento"
+                                                    name="fechaNacimiento"
+                                                    type="date" required />
+                                                <label
+                                                    for="fechaNacimiento">Fecha
+                                                    de Nacimiento</label>
+                                            </div>
+
+                                            <!-- Mensaje Input -->
+                                            <div class="form-floating mb-3">
+                                                <textarea class="form-control"
+                                                    id="mensaje" type="text"
+                                                    placeholder="Dejanos tus comentarios."
+                                                    style="height: 10rem;"
+                                                    required></textarea>
+                                                <label
+                                                    for="message">Comentarios</label>
+                                            </div>
+
+                                            <!-- Enviar Boton -->
+                                            <div class="d-grid">
+                                                <button
+                                                    class="btn btn-primary btn-lg"
+                                                    type="submit">Enviar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <section id="contenedor-forma">
+                        <div id="marcas">
+                            <p>Marcas con las que colaboramos.</p>
+                            <p>Que esperas para unirte?</p>
+                            <div id="logos-marcas">
+                                <img src="../assets/img/WhatsappIcon.png"
+                                    alt="Logo Guzi">
+                                <img src="../assets/img/logo_club_cochis_500x500.png"
+                                    alt="Logo Club de Cochis">
+                                <img src="../assets/img/descarga.png"
+                                    alt="Logo Bajayummy">
+                                <img src="../assets/img/iconoYAT.png"
+                                    alt="Logo Yo Amo Tijuana">
+                                <img src="../assets/img/logoToros.png"
+                                    alt="Logo Toros de Tijuana">
+                                <img src="../assets/img/Peninsula-Logo_Icono-circ-g.png"
+                                    alt="Logo Plaza Peninsula">
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </section>
-            <hr>
-            <!--En esta seccion se utiliza el iframe que optorga google maps para mencionar en la pagina el punto de reunion para las salidas turisticas.-->
-            <section>
-                <h2>Punto de Reunión</h2>
-                <p>Las caminatas turisticas o paquetes turisticos personalizados
-                    salen de este punto, el dia y la hora se acuerda por mensaje
-                    privado al ponerse en contacto con el equipo de Verdadera
-                    Tijuana.</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719.2222974110671!2d-117.03989461940476!3d32.535564946267996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94900b6332979%3A0xa1a875eb7763c81f!2sIglesia%20de%20Nuestra%20Se%C3%B1ora%20de%20Guadalupe%2C%20antigua%20Catedral!5e0!3m2!1sen!2smx!4v1706763548977!5m2!1sen!2smx"
-                    width="600" height="450" style="border:0;" allowfullscreen
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
+            </div>
         </main>
         <!--Aqui se agrega el pie de pagina el cual contiene tres secciones.-->
         <footer class="w-100">
-            <section class="d-flex justify-content-center align-items-center footer-nav">
+            <section
+                class="d-flex justify-content-center align-items-center footer-nav">
                 <a href="../pages/restaurantes.html">Restaurantes</a>
                 <div class="mx-2 linea-recta"></div>
                 <a href="../pages/cafeterias.html">Cafeterias</a>
                 <div class="mx-2 linea-recta"></div>
-                <a href="../pages/atraccionesVidaNocturna.html">Atracciones y Vida Nocturna</a>
+                <a href="../pages/atraccionesVidaNocturna.html">Atracciones y
+                    Vida Nocturna</a>
                 <div class="mx-2 linea-recta"></div>
                 <a href="../pages/contacto.html">Contacto</a>
             </section>
