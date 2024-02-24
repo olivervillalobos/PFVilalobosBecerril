@@ -114,13 +114,13 @@ body {
         }
     }
     #box-1 {
-        background-image: url(../assets/img/restaurante-miniatura.jpg);
+        background-image: url(https://i.imgur.com/Hkv8ZCH.jpg);
     }
     #box-2 {
-        background-image: url(../assets/img/cafe-miniatura.jpeg);
+        background-image: url(https://i.imgur.com/MfXUb9j.jpg);
     }
     #box-3 {
-        background-image: url(../assets/img/nocturno-miniatura.jpg);
+        background-image: url(https://i.imgur.com/2jT6EaV.jpg);
     }
     #box-1:hover,
     #box-2:hover,
@@ -200,6 +200,7 @@ footer{
 }
 .seccion-info-categoria {
     margin-top: 70px;
+    margin-bottom: 10px;
     padding: 2vh;
     .item-1{ grid-area: img1; }
     .item-2{ grid-area: img2; }
@@ -224,9 +225,6 @@ footer{
         .texto {
             padding: 2vh;
             gap: 10px;
-            h1 {
-                
-            }
             p {
                 text-align: justify;
                 line-height: 2;
@@ -266,32 +264,28 @@ footer{
     opacity: 0.2;
 }
 .container-galeria {
+    margin-top: 10px;
     padding-left: 4vw;
     padding-right: 4vw;
     padding-bottom: 4vw;
     padding-top: 2vw;
     gap: 4vw;
     .item {
-        width: 300px;
         background-color: hsl(0, 0%, 94%);
-        img {
-            padding: 15px;
+        width: 300px;
+        .imagen-carta{
+            height: 200px;
+            width: 300px;
         }
         .card-text{
             margin: 15px 15px 20px;
             gap: 15px;
-            .titulo-carta{
-                font-weight: bolder;
-                font-size: 1.2rem;
-            }
             .descripcion-carta{
                 text-align: justify;
-                font-size: 1rem;
             }
             .precio-carta{
                 font-weight: bolder;
                 color: var(--yellow-taco-off);
-                font-size: 1.2rem;
             }
         }
     }
