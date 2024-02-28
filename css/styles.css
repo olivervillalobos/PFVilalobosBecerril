@@ -22,8 +22,8 @@ Para fuentes siempre rem.*/
     overflow-x: hidden;
 }
 body {
-    font-family: 'League Spartan', sans-serif;
     background-color: #F1F1F1;
+    font-family: 'League Spartan', sans-serif;
 }
 .custom-navbar{
     background-color: var(--onyx) !important;
@@ -200,7 +200,6 @@ footer{
 }
 .seccion-info-categoria {
     margin-top: 70px;
-    margin-bottom: 10px;
     padding: 2vh;
     .item-1{ grid-area: img1; }
     .item-2{ grid-area: img2; }
@@ -262,13 +261,13 @@ footer{
     width: 95%;
     background-color: var(--onyx);
     opacity: 0.2;
+    margin-bottom: 20px;
 }
 .container-galeria {
-    margin-top: 10px;
     padding-left: 4vw;
     padding-right: 4vw;
     padding-bottom: 4vw;
-    padding-top: 2vw;
+    padding-top: 2vh;
     gap: 4vw;
     .item {
         background-color: hsl(0, 0%, 94%);
@@ -300,4 +299,15 @@ footer{
     iframe{
         height: 350px;
     }
+}
+.bg-image-contacto{
+    background-image: url('https://i.imgur.com/LLDEbLl.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.disclaimer{
+    width: 95%;
+    color: var(--yellow-taco-off);
+    letter-spacing: 1px;
+    font-size: 12px;
 }
