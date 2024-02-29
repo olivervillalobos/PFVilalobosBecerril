@@ -299,6 +299,32 @@ footer{
     iframe{
         height: 350px;
     }
+    .boton-contacto{
+        background-color: var(--periwinkle);
+        width: 100%;
+    }
+    .boton-contacto:hover{
+        transition: all 0s;
+        scale: 0.9;
+        color: var(--anti-flash-white);
+    }
+    textarea{
+        height: 10rem;
+    } 
+    .boton-modal{
+        color: var(--onyx);
+        background-color: var(--periwinkle);
+    }
+    .boton-modal:hover{
+        transition: all 0s;
+        scale: 0.9;
+        color: var(--anti-flash-white);
+    }
+    .tacha-cerrar{
+        border: none;
+        border-radius: 50%;
+    }
+    
 }
 .bg-image-contacto{
     background-image: url('https://i.imgur.com/LLDEbLl.jpg');

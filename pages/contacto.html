@@ -70,55 +70,43 @@
                                                 class="h3 fw-light">Contacto</div>
                                         </div>
                                         <form>
-                                            <!-- Nombre Input -->
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control"
-                                                    id="nombre" name="nombre"
-                                                    type="text"
-                                                    placeholder="Escribe tu nombre aquí..."
-                                                    required />
-                                                <label for="nombre">Nombre
-                                                    Completo</label>
-                                            </div>
-
-                                            <!-- Telefono Input -->
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control"
-                                                    id="telefono"
-                                                    name="telefono" type="tel"
-                                                    placeholder="(000)000-0000"
-                                                    required />
-                                                <label for="telefono">Numero de
-                                                    Telefono</label>
-                                            </div>
-
-                                            <!-- Fecha Nacimiento Input-->
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control"
-                                                    id="fechaNacimiento"
-                                                    name="fechaNacimiento"
-                                                    type="date" required />
-                                                <label
-                                                    for="fechaNacimiento">Fecha
-                                                    de Nacimiento</label>
-                                            </div>
-
-                                            <!-- Mensaje Input -->
-                                            <div class="form-floating mb-3">
-                                                <textarea class="form-control"
-                                                    id="mensaje" type="text"
-                                                    placeholder="Dejanos tus comentarios."
-                                                    style="height: 10rem;"
-                                                    required></textarea>
-                                                <label
-                                                    for="message">Comentarios</label>
-                                            </div>
-
-                                            <!-- Enviar Boton -->
-                                            <div class="d-grid">
-                                                <button
-                                                    class="btn btn-primary btn-lg"
-                                                    type="submit">Enviar</button>
+                                            <div class="form-row">
+                                                <div class="col mb-3">
+                                                    <label for="nombre">Nombre</label>
+                                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+                                                </div>
+                                                <div class="col mb-3">
+                                                    <label for="telefono">Telefono</label>
+                                                    <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número de telefono" required>
+                                                </div>
+                                                <div class="col mb-3">
+                                                    <label for="fecha">Fecha de nacimiento</label>
+                                                    <input type="date" class="form-control" id="fecha" placeholder="DD/MM/AAAA" required>
+                                                </div>
+                                                <div class="col mb-3">
+                                                    <label for="comentarios">Comentarios</label>
+                                                    <textarea class="form-control" name="comentarios" id="comentarios" placeholder="Escribenos tus comentarios"></textarea>
+                                                </div>
+                                                <div class="btn btn-lg boton-contacto" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</div>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Gracias por tu mensaje!</h5>
+                                                        <button type="button" class="close tacha-cerrar" data-bs-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                        En breve el equipo de Verdadera Tijuana se pondra en contacto contigo.
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn boton-modal" data-bs-dismiss="modal">Salir</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
