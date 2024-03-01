@@ -77,6 +77,13 @@ body {
     height: 4px;
     background-color: var(--anti-flash-white);
 }
+@media (max-width: 600px) {
+    .descripcion-index{
+        margin: 20px !important;
+        padding: 20px !important;
+        text-align: justify !important;
+    }
+}
 .container-categorias{
     width: 90%;
     #box-1,
@@ -295,7 +302,7 @@ footer{
     }
 }
 .pagina-contacto{
-    margin-top: 100px;
+    margin-top: 60px;
     iframe{
         height: 350px;
     }
