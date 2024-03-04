@@ -1,0 +1,28 @@
+{
+  "name": "proyecto-coder",
+  "version": "1.0.0",
+  "description": "Pagina de Turismo de Tijuana",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivervillalobos/Verdadera-Tijuana.git#main"
+  },
+  "author": "Oliver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olivervillalobos/Verdadera-Tijuana/issues"
+  },
+  "homepage": "https://github.com/olivervillalobos/Verdadera-Tijuana/tree/main#readme",
+
+  "liveSassCompile.settings.formats": [
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/css"
+    }
+]
+}
+
