@@ -1,0 +1,37 @@
+.disclaimer{
+    width: map-get($widths , ancho-95 );
+    color: $yellow-taco-off;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.container-galeria {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 4vw;
+    padding-top: 2vh;
+    gap: 4vw;
+    .item {
+        background-color: $item-bg;
+        width: map-get($widths , ancho-300px );
+        .imagen-carta{
+            height: map-get($heights, alto-200px );
+            width: map-get($widths , ancho-300px );
+        }
+        .card-text{
+            margin: map-get($margins , margen-15px-15px-20px );
+            gap: 15px;
+            .descripcion-carta{
+                text-align: justify;
+            }
+            .precio-carta{
+                font-weight: bolder;
+                color: $yellow-taco-off;
+            }
+        }
+        &:hover {
+            transition: all 0.3s;
+            box-shadow: 0 10px 15px 0.5px $item-shadow;
+            scale: 0.9;
+        }
+    }
+}

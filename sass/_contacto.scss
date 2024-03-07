@@ -1,0 +1,24 @@
+.pagina-contacto{
+    margin-top: map-get($margins , margen-arriba-60px );
+    iframe{
+        height: map-get($heights , alto-350px );
+    }
+    .boton-contacto{
+        background-color: $periwinkle;
+        width: map-get($widths , ancho-100 );
+        &:hover{
+            transition: all 0s;
+            scale: 0.9;
+            color: $anti-flash-white;
+        }
+    }
+    textarea{
+        height: map-get($heights , alto-10rem );
+    } 
+    
+}
+.bg-image-contacto{
+    background-image: url('https://i.imgur.com/LLDEbLl.jpg');
+    background-position: center;
+    background-size: cover;
+}

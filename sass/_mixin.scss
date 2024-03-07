@@ -1,0 +1,6 @@
+@mixin categoriaFlexible($justify, $align, $textAlign ){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $textAlign;
+}

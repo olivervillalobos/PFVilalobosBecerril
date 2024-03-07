@@ -7,5 +7,53 @@ $anti-flash-white: #EDF2F4;
 $onyx: #313638;
 $yellow-taco-off: #aaa200;
 $yellow-taco-on: #eee200;
+$primary: #F1F1F1;
+$item-bg: hsl(0, 0%, 94%);
+$item-shadow: rgb(139, 139, 139);
 
 $fuente-sparta: 'League Spartan', sans-serif;
+
+$widths:(
+    ancho-100: 100%,
+    ancho-95: 95%,
+    ancho-90: 90%,
+    ancho-80: 80%,
+    ancho-70: 70%,
+    ancho-60: 60%,
+    ancho-50: 50%,
+    ancho-40: 40%,
+    ancho-30: 30%,
+    ancho-20: 20%,
+    ancho-10: 10%,
+    ancho-5: 5%,
+    ancho-1: 1%,
+    ancho-45px: 45px,
+    ancho-300px: 300px,
+    ancho-550px: 550px,
+    ancho-600px: 600px,
+    ancho-850px: 850px,
+    ancho-900px: 900px
+); 
+
+$heights:(
+    alto-4px: 4px,
+    alto-5px: 5px,
+    alto-45px: 45px,
+    alto-200px: 200px,
+    alto-350px: 350px,
+    alto-400px: 400px,
+    alto-800px: 800px,
+    alto-86vh: 86vh,
+    alto-10rem: 10rem
+);
+
+$margins:(
+    margen-1: 1,
+    margen-20px: 20px,
+    margen-5px: 5px,
+    margen-arriba-60px: 60px,
+    margen-arriba-70px: 70px,
+    margen-abajo-20px: 20px,
+    margen-0-15px: 0 15px,
+    margen-15px-15px-20px: 15px 15px 20px
+)

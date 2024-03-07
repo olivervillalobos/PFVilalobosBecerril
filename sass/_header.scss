@@ -1,0 +1,31 @@
+.custom-navbar{
+    background-color: $onyx !important;
+    img{
+        width: map-get($widths, ancho-45px );
+        height: map-get($heights, alto-45px );
+        margin: map-get($margins, margen-5px);
+        &:hover{
+            transition: all 0.5s;
+            box-shadow: 0 0 5px 1px $anti-flash-white;
+        }
+        
+    }
+    .custom-toggler{
+        border: 1px solid $anti-flash-white;
+        &:focus{
+            text-decoration: none;
+            outline: none;
+            box-shadow: 0 0 5px 1px $anti-flash-white;
+        }
+    }
+    .custom-icon{
+        background-image: url(../assets/img/bars-solid.svg);
+    }
+    .nav-link{
+        color: $anti-flash-white;
+        &:hover{
+            color: $light-periwinkle;
+            text-shadow:  2px 2px 8px $anti-flash-white;
+        }
+    }
+}

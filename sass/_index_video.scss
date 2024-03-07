@@ -1,0 +1,22 @@
+.custom-video{
+    filter: brightness(40%);
+    background-size: cover;
+    width: map-get($widths, ancho-100 );
+}
+.custom-video-content{
+    color: $anti-flash-white;
+}
+.bg-anti-white{
+    background-color: $anti-flash-white;
+}
+.bg-white{
+    background-color: white;
+}
+.custom-hr-video{
+    margin: map-get($margins, margen-1 );
+    color: $anti-flash-white;
+    opacity: 1;
+    border: none;
+    height: map-get($heights, alto-4px );
+    background-color: $anti-flash-white;
+}
