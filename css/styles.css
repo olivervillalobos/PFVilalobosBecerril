@@ -238,6 +238,11 @@ footer .footer-cr {
     gap: 15px;
   }
 }
+.dFlexCenter {
+  display: flex;
+  justify-content: center;
+}
+
 .seccion-info-categoria {
   margin-top: 70px;
   padding: 2vh;
@@ -301,6 +306,21 @@ footer .footer-cr {
   margin-bottom: 20px;
 }
 
+.aspectoItem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerInformacionCategoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
 .disclaimer {
   width: 95%;
   color: #aaa200;
@@ -338,6 +358,23 @@ footer .footer-cr {
   transition: all 0.3s;
   box-shadow: 0 10px 15px 0.5px rgb(139, 139, 139);
   scale: 0.9;
+}
+
+.galleryFlex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.galleryFlex .cardFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.galleryFlex .cardFlex .textoFlexible {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pagina-contacto {

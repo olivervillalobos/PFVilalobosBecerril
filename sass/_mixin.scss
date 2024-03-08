@@ -4,3 +4,42 @@
     align-items: $align;
     text-align: $textAlign;
 }
+
+@mixin centerFlexible(){
+    display: flex;
+    justify-content: center;
+}
+
+@mixin widthHeightCover($ancho, $alto, $size){
+    width: $ancho;
+    height: $alto;
+    object-fit: $size;
+}
+
+@mixin containerFlex100(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: map-get($widths, ancho-100 );
+    height: map-get($heights, alto-100);
+    justify-content: center;
+}
+
+@mixin containerGalleryFlex(){
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@mixin galleryItemCard(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flexTextCard(){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -44,3 +44,6 @@ footer{
         gap: 15px;
     }
 }
+.dFlexCenter{
+    @include centerFlexible();
+}

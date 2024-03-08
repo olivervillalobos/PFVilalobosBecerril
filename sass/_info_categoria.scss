@@ -59,3 +59,11 @@
     opacity: 0.2;
     margin-bottom: map-get($margins, margen-abajo-20px );
 }
+
+.aspectoItem{
+    @include widthHeightCover(map-get($widths, ancho-100), map-get($heights, alto-100),cover);
+}
+
+.containerInformacionCategoria{
+    @include containerFlex100();
+}

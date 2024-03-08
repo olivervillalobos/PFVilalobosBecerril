@@ -35,3 +35,13 @@
         }
     }
 }
+
+.galleryFlex{
+    @include containerGalleryFlex();
+    .cardFlex{
+        @include galleryItemCard();
+        .textoFlexible{
+            @include flexTextCard();
+        }
+    }
+}
