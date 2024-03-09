@@ -1,141 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Metadatos del documento -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Descubre la vibrante escena gastronómica y turística de Tijuana. Explora nuestras categorías para vivir experiencias únicas en la frontera mexicana. ¡Planifica tu escapada ahora!">
-        <!-- Palabras clave para SEO -->
-        <meta name="keyword" content="Tijuana, Turismo en Tijuana, Qué hacer en Tijuana, Visitar Tijuana, Tijuana México, Frontera con San Diego, Gastronomía en Tijuana, Mercados callejeros en Tijuana, Arte y cultura en Tijuana, Vida nocturna en Tijuana, Mirador de Tijuana, Playas de Tijuana, Turismo de aventura en Tijuana, Eventos en Tijuana, Lugares históricos en Tijuana">
-        <!-- Título de la página -->
-        <title>Turismo en Tijuana | verdadera Tijuana</title>
-        <!-- Hojas de estilo -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/styles.css">
-        <!-- Icono de la página -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <!-- Biblioteca de iconos -->
-        <script src="https://kit.fontawesome.com/031b0c1a95.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- Encabezado -->
-        <header>
-            <nav class="navbar navbar-expand-sm fixed-top custom-navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand me-auto" href="#">
-                        <!-- Logo de la página -->
-                        <img class="rounded-circle" src="./assets/img/verdadera_Tijuana_500x500.png" alt="Logo de verdadera Tijuana">
-                    </a>
-                    <!-- Botón de navegación -->
-                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon custom-icon">
-                        </span>
-                    </button>
-                    <!-- Menú de navegación -->
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav mx-auto">
-                            <a class="nav-link mx-2" href="#">Inicio</a>
-                            <a class="nav-link mx-2" href="./pages/restaurantes.html">Restaurantes</a>
-                            <a class="nav-link mx-2" href="./pages/cafeterias.html">Cafeterias</a>
-                            <a class="nav-link mx-2" href="./pages/atraccionesVidaNocturna.html">Atracciones y Vida Nocturna</a>
-                            <a class="nav-link mx-2" href="./pages/contacto.html">Contacto</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- Contenido principal -->
-        <main>
-            <!-- Sección de video -->
-            <section>
-                <video autoplay loop muted class="vh-100 object-fit-cover custom-video position-relative">
-                    <!-- Fuente del video -->
-                    <source src="https://i.imgur.com/avnUnz4.mp4" type="video/mp4" alt="Video de Tijuana"/>
-                </video>
-                <div class="position-absolute top-50 start-50 translate-middle custom-video-content">
-                    <!-- Título y descripción del video -->
-                    <h1 class="text-center display-5">¡Descubre Tijuana: Sabores, Cultura y Diversión en una Sola Ciudad!</h1>
-                    <hr class="bg-anti-white mx-auto custom-hr-video rounded">
-                    <p class="text-center lead fs-4 text">Explora los rincones más deliciosos, las atracciones imperdibles y la vibrante vida nocturna de Tijuana.</p>
-                </div>
-            </section>
-            <!-- Sección de descripción -->
-            <section class="container-fluid" data-aos="fade-up">
-                <div class="p-5 m-5 rounded text-center fs-4 text lh-base bg-white descripcion-index">
-                    <!-- Descripción de Tijuana -->
-                    <p>¡Bienvenido a la vibrante Tijuana, donde la cultura, la gastronomía y la diversión convergen en una experiencia única! Descubre la riqueza de esta ciudad fronteriza, desde sus deliciosos sabores en reconocidos restaurantes hasta sus atracciones turísticas cautivadoras. Sumérgete en la energía de la vida nocturna tijuanense y explora cada rincón lleno de historia y autenticidad. Tijuana te espera con los brazos abiertos, ¡prepárate para un viaje inolvidable!</p>
-                </div>
-            </section>
-            <!-- Sección de categorías -->
-            <section data-aos="fade-down">
-                <div class="container-fluid mx-auto mt-auto mb-1 d-flex justify-content-sm-around p-2 gap-2 container-categorias">
-                    <!-- Categorías -->
-                    <div class="p-2 rounded seccionCategoria" id="box-1">
-                        <div class="w-100 rounded m-3 p-3 gap-6">
-                            <h3 class="fs-4 text">Restaurantes</h3>
-                            <a class="rounded" href="./pages/restaurantes.html">Conocer más</a>
-                        </div>
-                    </div>
-                    <div class="p-2 rounded seccionCategoria" id="box-2">
-                        <div class="w-100 rounded m-3 p-3 gap-6">
-                            <h3 class="fs-4 text">Cafeterias</h3>
-                            <a class="rounded" href="./pages/cafeterias.html">Conocer más</a>
-                        </div>
-                    </div>
-                    <div class="p-2 rounded seccionCategoria" id="box-3">
-                        <div class="w-100 rounded m-3 p-3 gap-6">
-                            <h3 class="fs-4 text">Atracciones y Vida Nocturna</h3>
-                            <a class="rounded" href="./pages/atraccionesVidaNocturna.html">Conocer más</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Pie de página -->
-        <footer class="w-100">
-            <section class="dFlexCenter align-items-center footer-nav">
-                <!-- Enlaces de navegación -->
-                <a href="#">Inicio</a>
-                <div class="mx-2 vr linea-recta"></div>
-                <a href="./pages/restaurantes.html">Restaurantes</a>
-                <div class="mx-2 vr linea-recta"></div>
-                <a href="./pages/cafeterias.html">Cafeterias</a>
-                <div class="mx-2 vr linea-recta"></div>
-                <a href="./pages/atraccionesVidaNocturna.html">Atracciones y Vida Nocturna</a>
-                <div class="mx-2 vr linea-recta"></div>
-                <a href="./pages/contacto.html">Contacto</a>
-            </section>
-            <!-- Redes sociales -->
-            <section class="dFlexCenter footer-rs">
-                <a href="https://www.facebook.com/" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-                <a href="https://www.tiktok.com/" target="_blank">
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
-                <a href="https://www.whatsapp.com/" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </section>
-            <!-- Derechos de autor -->
-            <section class="dFlexCenter footer-cr">
-                <span>Copyright © 2024 Oliver Villalobos, Group.</span>
-            </section>
-        </footer>
-        <!-- Scripts -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>AOS.init();</script>
-        <script src="./js/bootstrap.bundle.min.js"></script>
-        <script src="./js/script.js"></script>
-    </body>
+  <head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre la vibrante escena gastronómica y turística de Tijuana. Explora nuestras categorías para vivir experiencias únicas en la frontera mexicana. ¡Planifica tu escapada ahora!"
+    />
+    <!-- Palabras clave para SEO -->
+    <meta
+      name="keywords"
+      content="Tijuana, Turismo en Tijuana, Qué hacer en Tijuana, Visitar Tijuana, Tijuana México, Frontera con San Diego, Gastronomía en Tijuana, Mercados callejeros en Tijuana, Arte y cultura en Tijuana, Vida nocturna en Tijuana, Mirador de Tijuana, Playas de Tijuana, Turismo de aventura en Tijuana, Eventos en Tijuana, Lugares históricos en Tijuana"
+    />
+    <!-- Título de la página -->
+    <title>Turismo en Tijuana | verdadera Tijuana</title>
+    <!-- Hojas de estilo -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Icono de la página -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Biblioteca de iconos -->
+    <script
+      src="https://kit.fontawesome.com/031b0c1a95.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <nav class="navbar navbar-expand-sm fixed-top custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">
+            <!-- Logo de la página -->
+            <img
+              class="rounded-circle"
+              src="./assets/img/verdadera_Tijuana_500x500.png"
+              alt="Logo de verdadera Tijuana"
+            />
+          </a>
+          <!-- Botón de navegación -->
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon custom-icon"> </span>
+          </button>
+          <!-- Menú de navegación -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link mx-2" href="#">Inicio</a>
+              <a class="nav-link mx-2" href="./pages/restaurantes.html"
+                >Restaurantes</a
+              >
+              <a class="nav-link mx-2" href="./pages/cafeterias.html"
+                >Cafeterias</a
+              >
+              <a
+                class="nav-link mx-2"
+                href="./pages/atraccionesVidaNocturna.html"
+                >Atracciones y Vida Nocturna</a
+              >
+              <a class="nav-link mx-2" href="./pages/contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+      <!-- Sección de video -->
+      <section>
+        <video
+          autoplay
+          loop
+          muted
+          class="vh-100 object-fit-cover custom-video position-relative"
+        >
+          <!-- Fuente del video -->
+          <source
+            src="https://i.imgur.com/avnUnz4.mp4"
+            type="video/mp4"
+            alt="Video de Tijuana"
+          />
+        </video>
+        <div
+          class="position-absolute top-50 start-50 translate-middle custom-video-content"
+        >
+          <!-- Título y descripción del video -->
+          <h1 class="text-center display-5">
+            ¡Descubre Tijuana: Sabores, Cultura y Diversión en una Sola Ciudad!
+          </h1>
+          <hr class="bg-anti-white mx-auto custom-hr-video rounded" />
+          <p class="text-center lead fs-4 text">
+            Explora los rincones más deliciosos, las atracciones imperdibles y
+            la vibrante vida nocturna de Tijuana.
+          </p>
+        </div>
+      </section>
+      <!-- Sección de descripción -->
+      <section class="container-fluid" data-aos="fade-up">
+        <div
+          class="p-5 m-5 rounded fs-4 text lh-base bg-white descripcion-index"
+        >
+          <!-- Descripción de Tijuana -->
+          <p>
+            ¡Bienvenido a la vibrante Tijuana, donde la cultura, la gastronomía
+            y la diversión convergen en una experiencia única! Descubre la
+            riqueza de esta ciudad fronteriza, desde sus deliciosos sabores en
+            reconocidos restaurantes hasta sus atracciones turísticas
+            cautivadoras. Sumérgete en la energía de la vida nocturna tijuanense
+            y explora cada rincón lleno de historia y autenticidad. Tijuana te
+            espera con los brazos abiertos, ¡prepárate para un viaje
+            inolvidable!
+          </p>
+        </div>
+      </section>
+      <!-- Sección de categorías -->
+      <section data-aos="fade-down">
+        <div
+          class="container-fluid mx-auto mt-auto mb-1 d-flex justify-content-sm-around p-2 gap-2 container-categorias"
+        >
+          <!-- Categorías -->
+          <div class="p-2 rounded seccionCategoria" id="box-1">
+            <div class="w-100 rounded m-3 p-3 gap-6">
+              <p class="fs-4 text">Restaurantes</p>
+              <a class="rounded" href="./pages/restaurantes.html"
+                >Conocer más</a
+              >
+            </div>
+          </div>
+          <div class="p-2 rounded seccionCategoria" id="box-2">
+            <div class="w-100 rounded m-3 p-3 gap-6">
+              <p class="fs-4 text">Cafeterias</p>
+              <a class="rounded" href="./pages/cafeterias.html">Conocer más</a>
+            </div>
+          </div>
+          <div class="p-2 rounded seccionCategoria" id="box-3">
+            <div class="w-100 rounded m-3 p-3 gap-6">
+              <p class="fs-4 text">Atracciones y Vida Nocturna</p>
+              <a class="rounded" href="./pages/atraccionesVidaNocturna.html"
+                >Conocer más</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Pie de página -->
+    <footer class="w-100">
+      <section class="dFlexCenter align-items-center footer-nav">
+        <!-- Enlaces de navegación -->
+        <a href="#">Inicio</a>
+        <div class="mx-2 vr linea-recta"></div>
+        <a href="./pages/restaurantes.html">Restaurantes</a>
+        <div class="mx-2 vr linea-recta"></div>
+        <a href="./pages/cafeterias.html">Cafeterias</a>
+        <div class="mx-2 vr linea-recta"></div>
+        <a href="./pages/atraccionesVidaNocturna.html"
+          >Atracciones y Vida Nocturna</a
+        >
+        <div class="mx-2 vr linea-recta"></div>
+        <a href="./pages/contacto.html">Contacto</a>
+      </section>
+      <!-- Redes sociales -->
+      <section class="dFlexCenter footer-rs">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://www.whatsapp.com/" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </section>
+      <!-- Derechos de autor -->
+      <section class="dFlexCenter footer-cr">
+        <span>Copyright © 2024 Oliver Villalobos, Group.</span>
+      </section>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
