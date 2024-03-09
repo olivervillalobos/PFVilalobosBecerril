@@ -1,22 +1,43 @@
-.custom-video{
+/* Estilos para videos personalizados */
+.custom-video {
+    /* Reducir el brillo del video */
     filter: brightness(40%);
+    /* Ajustar el tamaño del fondo */
     background-size: cover;
-    width: map-get($widths, ancho-100 );
+    /* Definir el ancho utilizando una variable */
+    width: map-get($widths, ancho-100);
 }
-.custom-video-content{
+
+/* Estilos para el contenido dentro de los videos personalizados */
+.custom-video-content {
+    /* Color del texto */
     color: $anti-flash-white;
 }
-.bg-anti-white{
+
+/* Estilos para fondos con color blanco antirreflejo */
+.bg-anti-white {
+    /* Fondo de color blanco antirreflejo */
     background-color: $anti-flash-white;
 }
-.bg-white{
+
+/* Estilos para fondos blancos */
+.bg-white {
+    /* Fondo blanco */
     background-color: white;
 }
-.custom-hr-video{
-    margin: map-get($margins, margen-1 );
+
+/* Estilos para líneas horizontales en videos personalizados */
+.custom-hr-video {
+    /* Margen utilizando una variable */
+    margin: map-get($margins, margen-1);
+    /* Color del texto */
     color: $anti-flash-white;
+    /* Opacidad completa */
     opacity: 1;
+    /* Sin borde */
     border: none;
-    height: map-get($heights, alto-4px );
+    /* Altura utilizando una variable */
+    height: map-get($heights, alto-4px);
+    /* Fondo de color blanco antirreflejo */
     background-color: $anti-flash-white;
 }

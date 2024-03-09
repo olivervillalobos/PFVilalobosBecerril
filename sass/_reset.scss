@@ -1,7 +1,12 @@
-*{
+/* Se establece la regla para ocultar el desbordamiento horizontal en todos los elementos */
+* {
     overflow-x: hidden;
 }
+
+/* Se establecen las reglas para el cuerpo del documento */
 body {
+    /* Se establece el color de fondo utilizando la variable $primary */
     background-color: $primary;
+    /* Se establece la fuente del texto utilizando la variable $fuente-sparta */
     font-family: $fuente-sparta;
 }

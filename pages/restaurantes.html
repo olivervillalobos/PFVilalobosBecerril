@@ -1,45 +1,58 @@
 <!DOCTYPE html>
-<!--Aqui se agrega el atributo de lenguaje para que se pueda interpretar en el idioma ingles.-->
 <html lang="en">
-    <!--En el head se agrega lo necesario para que interrete los caracteres mas comunes, el titulo de la pagina, los links a la hoja de estilos, de js, de fontawesome y el favicon-->
     <head>
+        <!-- Sección de encabezado -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>verdadera Tijuana</title>
+        <meta name="description" content="Descubre los mejores restaurantes en Tijuana: desde la gastronomía local hasta las opciones gourmet. Encuentra dónde ir a comer en esta vibrante ciudad fronteriza.">
+        <!-- Palabras clave para SEO -->
+        <meta name="keywords" name="restaurantes, Tijuana, gastronomía, opciones gourmet, dónde ir a comer, ciudad fronteriza">
+    
+        <!-- Título de la página -->
+        <title>Restaurantes | verdadera Tijuana</title>
+        <!-- Enlaces a archivos CSS y fuente -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <script src="https://kit.fontawesome.com/031b0c1a95.js"
-            crossorigin="anonymous"></script>
+        <!-- Enlace a FontAwesome -->
+        <script src="https://kit.fontawesome.com/f5f1ed7235.js" crossorigin="anonymous"></script>
     </head>
-    <!--En el body se agrega el contenido de la pagina, en este caso al body se le otorgo un color de fondo-->
     <body>
-        <!--El header contiene la barra de navegacion, en la cual inluye un logo y ligas-->
+        <!-- Encabezado de la página -->
         <header>
+            <!-- Barra de navegación -->
             <nav class="navbar navbar-expand-sm fixed-top custom-navbar">
                 <div class="container-fluid">
+                    <!-- Logo de la página -->
                     <a class="navbar-brand me-auto" href="../index.html">
                         <img class="rounded-circle" src="../assets/img/verdadera_Tijuana_500x500.png" alt="Logo de verdadera Tijuana">
                     </a>
-                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon custom-icon">
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto">
-                        <a class="nav-link mx-2" href="../index.html">Inicio</a>
-                    <a class="nav-link mx-2" href="../pages/restaurantes.html">Restaurantes</a>
-                    <a class="nav-link mx-2" href="../pages/cafeterias.html">Cafeterias</a>
-                    <a class="nav-link mx-2" href="../pages/atraccionesVidaNocturna.html">Atracciones y Vida Nocturna</a>
-                    <a class="nav-link mx-2" href="../pages/contacto.html">Contacto</a>
+                    <!-- Botón de menú desplegable para dispositivos móviles -->
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon custom-icon"></span>
+                    </button>
+                    <!-- Contenido del menú de navegación -->
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav mx-auto">
+                            <!-- Enlaces a diferentes secciones -->
+                            <a class="nav-link mx-2" href="../index.html">Inicio</a>
+                            <a class="nav-link mx-2" href="../pages/restaurantes.html">Restaurantes</a>
+                            <a class="nav-link mx-2" href="../pages/cafeterias.html">Cafeterias</a>
+                            <a class="nav-link mx-2" href="../pages/atraccionesVidaNocturna.html">Atracciones y Vida Nocturna</a>
+                            <a class="nav-link mx-2" href="../pages/contacto.html">Contacto</a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </nav>
         </header>
+        <!-- Contenido principal -->
         <main>
+            <!-- Sección de información de categoría -->
             <section class="seccion-info-categoria">
+                <!-- Contenedor de la cuadrícula -->
                 <div class="cuadricula-contenedor">
+                    <!-- Imágenes y texto descriptivo -->
                     <div class="imagen item-1">
                         <img class="aspectoItem rounded" src="https://i.imgur.com/Hkv8ZCH.jpg"
                             alt="Restaurante Gulisanos">
@@ -49,7 +62,7 @@
                             alt="Restaurante Horno">
                     </div>
                     <div class="containerInformacionCategoria texto item-3">
-                        <h2 class="display-6 fs-2">Oferta Gastronomica de Tijuana</h2>
+                        <h1 class="display-6 fs-2">Oferta Gastronomica de Tijuana</h1>
                         <p class="lead fs-5 lh-sm">Tijuana es la capital del buen comer, con su
                             variadísima oferta gastronómica que no solo tiene
                             reminiscencias de un sinnúmero de países, sino que
@@ -61,26 +74,32 @@
                     </div>
                 </div>
             </section>
+            <!-- Divisor de categorías -->
             <div class="mx-auto rounded divisor-categorias"></div>
+            <!-- Aviso de precios -->
             <div class="alert alert-light mx-auto disclaimer" role="alert">
                 Los precios indicados en cada carta son estimaciones basadas en el consumo promedio de una persona. Por lo tanto, los precios reales pueden ser diferentes al momento de consumir en el sitio. Te recomendamos que consultes los precios actualizados directamente en el establecimiento.
             </div>
+            <!-- Galería de restaurantes -->
             <section class="container-fluid">
                 <div class="galleryFlex container-galeria">
-                    <div class="cardFlex rounded item">
+                    <!-- Cartas de restaurantes-->
+                    <div class="cardFlex rounded item" data-aos="fade">
+                        <!--Imagen y enlace-->
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/Ra3xmYL19deNo8sZA" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/MC6hhRk.jpg"
                                     alt="Tacos Chowis">
                             </a>
                         </div>
+                        <!-- Texto descriptivo -->
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Tacos Chowis</h3>
+                            <h2 class="display-6 fs-3">Tacos Chowis</h2>
                             <p class="descripcion-carta lead fs-6">Fonda tradicional Mexicana. Se sirven desayunos mexicanos y tacos.</p>
                             <span class="precio-carta fs-4">$100 - 200</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/GFWUCzxX1xZBH42QA" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/m51sYMl.jpg"
@@ -88,12 +107,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Pozolería Rincón Guerrerense</h3>
+                            <h2 class="display-6 fs-3">Pozolería Rincón Guerrerense</h2>
                             <p class="descripcion-carta lead fs-6">Antojitos estilo Guerrero como Pozole, Chiles Capones, Chalupitas Guerrerenses, y más...</p>
                             <span class="precio-carta fs-4">$150 - 300</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/pnexgEZjCYevXwCg6" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/l0DYWWv.jpg"
@@ -101,12 +120,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Tacos el Nuevo Poblano</h3>
+                            <h2 class="display-6 fs-3">Tacos el Nuevo Poblano</h2>
                             <p class="descripcion-carta lead fs-6">Taqueria poblana, tacos de asada o adobada, mulitas y quesadillas.</p>
                             <span class="precio-carta fs-4">$100 - 200</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/EwpMn6mJ2VMKFm2S9" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/DOzKlFx.jpg"
@@ -114,12 +133,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Casa Prado</h3>
+                            <h2 class="display-6 fs-3">Casa Prado</h2>
                             <p class="descripcion-carta lead fs-6">Cheve Artesanal, vino natural, smash burgers y más.</p>
                             <span class="precio-carta fs-4">$200 - 350</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/6yNXcv5iixFrEi2MA" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/aHP3ExJ.png"
@@ -127,12 +146,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">NASH Hot Chicken Sandwiches</h3>
+                            <h2 class="display-6 fs-3">NASH Hot Chicken Sandwiches</h2>
                             <p class="descripcion-carta lead fs-6">Hamburguesas de pollo estilo Nashville</p>
                             <span class="precio-carta fs-4">$200 - 300</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/U8Hk6uoK2ta7bss99" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/Gjs2oOy.jpg"
@@ -140,12 +159,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Pizza Records</h3>
+                            <h2 class="display-6 fs-3">Pizza Records</h2>
                             <p class="descripcion-carta lead fs-6">Pizzería estilo napolitana, cheve y opciones veganas.</p>
                             <span class="precio-carta fs-4">$100 - 250</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/hE2ksmicLZpghKsJA" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/tgurOXk.jpg"
@@ -153,12 +172,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Gulisano’s Cucina Siciliana Torela</h3>
+                            <h2 class="display-6 fs-3">Gulisano’s Cucina Siciliana Torela</h2>
                             <p class="descripcion-carta lead fs-6">Restaurante italiano, con cocina Siciliana.</p>
                             <span class="precio-carta fs-4">$200 - 500</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/SryKr8cMkmzWto6k9" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/kZgenlm.jpg"
@@ -166,12 +185,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Carmelina Molino y Cocina</h3>
+                            <h2 class="display-6 fs-3">Carmelina Molino y Cocina</h2>
                             <p class="descripcion-carta lead fs-6">Restaurante y Cafetería Mexicana, cuentan con diferentes tipos de maíz.</p>
                             <span class="precio-carta fs-4">$200 - 350</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/vCZ8MJAjcD3T6bxT7" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/nNn1D7b.jpg"
@@ -179,12 +198,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Restaurant Mariposa</h3>
+                            <h2 class="display-6 fs-3">Restaurant Mariposa</h2>
                             <p class="descripcion-carta lead fs-6">Restaurante de comida China estilo Tijuana.</p>
                             <span class="precio-carta fs-4">$200 - 300</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/4USCcWdJmWmpCAYQ9" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/0X0O9qN.jpg"
@@ -192,12 +211,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Arirang Fonda Coreana</h3>
+                            <h2 class="display-6 fs-3">Arirang Fonda Coreana</h2>
                             <p class="descripcion-carta lead fs-6">Restaurante de comida Coreana, acogedor y de sabor casero.</p>
                             <span class="precio-carta fs-4">$150 - 250</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/ZgQi958fstPQvTtv7" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/1DYXwZr.jpg"
@@ -205,12 +224,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Phở 999 Tj</h3>
+                            <h2 class="display-6 fs-3">Phở 999 Tj</h2>
                             <p class="descripcion-carta lead fs-6">Restaurante de comida vietnamita, especializado en Phở. </p>
                             <span class="precio-carta fs-4">$150 - 250</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/9QepREAHpPVcfGYm8" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/dUkBPCA.jpg"
@@ -218,12 +237,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Mariscos El Angel</h3>
+                            <h2 class="display-6 fs-3">Mariscos El Angel</h2>
                             <p class="descripcion-carta lead fs-6">Restaurante de mariscos, tacos, tostadas, cocteles y más. </p>
                             <span class="precio-carta fs-4">$150 - 350</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/9XHk3knjzg6eXhK99" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/Bt2i5ou.jpg"
@@ -231,12 +250,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Casa de Coronado’s Cafe</h3>
+                            <h2 class="display-6 fs-3">Casa de Coronado’s Cafe</h2>
                             <p class="descripcion-carta lead fs-6">Restaurante de Desayunos estilo Tex-Mexs. </p>
                             <span class="precio-carta fs-4">$180 - 300</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/uK8pPkwtQe46NAsD9" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/z59QrpJ.jpg"
@@ -244,12 +263,12 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Pollos Guamuchil</h3>
+                            <h2 class="display-6 fs-3">Pollos Guamuchil</h2>
                             <p class="descripcion-carta lead fs-6">Rosticeria Estilo Guamuchil, Pollos asados al carbón.</p>
                             <span class="precio-carta fs-4">$150 - 300</span>
                         </div>
                     </div>
-                    <div class="cardFlex rounded item">
+                    <div class="cardFlex rounded item" data-aos="fade">
                         <div class="imagen-carta">
                             <a href="https://maps.app.goo.gl/QTiEyz6xcj357zBx9" target="_blank">
                                 <img class="w-100 h-100 object-fit-cover" src="https://i.imgur.com/1vR0f5j.jpg"
@@ -257,7 +276,7 @@
                             </a>
                         </div>
                         <div class="textoFlexible card-text">
-                            <h3 class="display-6 fs-3">Señor Sushi</h3>
+                            <h2 class="display-6 fs-3">Señor Sushi</h2>
                             <p class="descripcion-carta lead fs-6">Restaurante japonés, sushi estilo culiacan, teriyaki y más.</p>
                             <span class="precio-carta fs-4">$200 - 350</span>
                         </div>
@@ -265,48 +284,55 @@
                 </div>
             </section>
         </main>
-        <!--Aqui se agrega el pie de pagina el cual contiene tres secciones.-->
-        <footer class="w-100">
-            <section
-              class="dFlexCenter align-items-center footer-nav"
-            >
-            <a href="../index.html">Inicio</a>
-              <div class="mx-2 vr linea-recta"></div>  
-            <a href="../pages/restaurantes.html">Restaurantes</a>
-              <div class="mx-2 vr linea-recta"></div>
-              <a href="../pages/cafeterias.html">Cafeterias</a>
-              <div class="mx-2 vr linea-recta"></div>
-              <a href="../pages/atraccionesVidaNocturna.html"
-                >Atracciones y Vida Nocturna</a
-              >
-              <div class="mx-2 vr linea-recta"></div>
-              <a href="../pages/contacto.html">Contacto</a>
-            </section>
-            <section class="dFlexCenter footer-rs">
-              <a href="https://www.facebook.com/" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://twitter.com/" target="_blank">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-              <a href="https://www.tiktok.com/" target="_blank">
-                <i class="fa-brands fa-tiktok"></i>
-              </a>
-              <a href="https://www.whatsapp.com/" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="https://www.youtube.com/" target="_blank">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-            </section>
-            <section class="dFlexCenter footer-cr">
-              <span>Copyright © 2024 Oliver Villalobos, Group.</span>
-            </section>
-          </footer>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/script.js"></script>
-    </body>
-</html>
+                <!-- Pie de página -->
+                <footer class="w-100">
+                    <!-- Navegación del pie de página -->
+                    <section class="dFlexCenter align-items-center footer-nav">
+                        <a href="../index.html">Inicio</a>
+                        <div class="mx-2 vr linea-recta"></div>  
+                        <a href="../pages/restaurantes.html">Restaurantes</a>
+                        <div class="mx-2 vr linea-recta"></div>
+                        <a href="../pages/cafeterias.html">Cafeterias</a>
+                        <div class="mx-2 vr linea-recta"></div>
+                        <a href="../pages/atraccionesVidaNocturna.html">Atracciones y Vida Nocturna</a>
+                        <div class="mx-2 vr linea-recta"></div>
+                        <a href="../pages/contacto.html">Contacto</a>
+                    </section>
+                    
+                    <!-- Redes sociales del pie de página -->
+                    <section class="dFlexCenter footer-rs">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <!-- Otros enlaces a redes sociales -->
+                        <!-- ... -->
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                          </a>
+                          <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                          </a>
+                          <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                          </a>
+                          <a href="https://www.whatsapp.com/" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                          </a>
+                          <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                          </a>
+                    </section>
+                    
+                    <!-- Derechos de autor del pie de página -->
+                    <section class="dFlexCenter footer-cr">
+                        <span>Copyright © 2024 Oliver Villalobos, Group.</span>
+                    </section>
+                </footer>
+                
+                <!-- Scripts JavaScript -->
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>AOS.init();</script>
+                <script src="../js/bootstrap.bundle.min.js"></script>
+                <script src="../js/script.js"></script>
+            </body>
+        </html>

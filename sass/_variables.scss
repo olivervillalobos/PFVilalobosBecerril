@@ -1,3 +1,4 @@
+// Definición de colores utilizando variables para mantener consistencia y facilitar la modificación en el futuro
 $rosy-brown: #BB978A;
 $smoky-black: #140F0D;
 $powder-blue: #A8BFE2;
@@ -11,9 +12,11 @@ $primary: #F1F1F1;
 $item-bg: hsl(0, 0%, 94%);
 $item-shadow: rgb(139, 139, 139);
 
+// Definición de la fuente principal a utilizar en la página
 $fuente-sparta: 'League Spartan', sans-serif;
 
-$widths:(
+// Definición de anchos utilizando un mapa para mantener organizados los diferentes valores posibles
+$widths: (
     ancho-100: 100%,
     ancho-95: 95%,
     ancho-90: 90%,
@@ -33,9 +36,10 @@ $widths:(
     ancho-600px: 600px,
     ancho-850px: 850px,
     ancho-900px: 900px
-); 
+);
 
-$heights:(
+// Definición de alturas utilizando un mapa para mantener organizados los diferentes valores posibles
+$heights: (
     alto-4px: 4px,
     alto-5px: 5px,
     alto-45px: 45px,
@@ -48,7 +52,8 @@ $heights:(
     alto-100: 100%
 );
 
-$margins:(
+// Definición de márgenes utilizando un mapa para mantener organizados los diferentes valores posibles
+$margins: (
     margen-1: 1,
     margen-20px: 20px,
     margen-5px: 5px,
@@ -57,4 +62,4 @@ $margins:(
     margen-abajo-20px: 20px,
     margen-0-15px: 0 15px,
     margen-15px-15px-20px: 15px 15px 20px
-)
+);

@@ -1,101 +1,143 @@
-/*Rem para textos, para lo demas px, % y vh,vw*/
-/*Esto es para reinicir todo tipo de estilo
-Para fuentes siempre rem.*/
-/*Aqui se reiniia el estilode la pagina quitando margin y padding, se da la fuente a usar.*/
-/*Importacion de fuentes*/
+@charset "UTF-8";
+/* Importación de la fuente 'League Spartan' desde Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap");
+/* Importación de variables personalizadas */
+/* Importación de mixins personalizados */
+/* Importación del reseteo de estilos */
+/* Se establece la regla para ocultar el desbordamiento horizontal en todos los elementos */
 * {
   overflow-x: hidden;
 }
 
+/* Se establecen las reglas para el cuerpo del documento */
 body {
+  /* Se establece el color de fondo utilizando la variable $primary */
   background-color: #F1F1F1;
+  /* Se establece la fuente del texto utilizando la variable $fuente-sparta */
   font-family: "League Spartan", sans-serif;
 }
 
+/* Importación del estilo del encabezado */
+/* Estilo para la barra de navegación personalizada */
 .custom-navbar {
-  background-color: #313638 !important;
+  background-color: #313638 !important; /* Configuración del color de fondo */
+  /* Estilos para la imagen en la barra de navegación */
+  /* Estilos para el botón de menú personalizado */
+  /* Estilos para el icono del menú personalizado */
+  /* Estilos para los enlaces de navegación */
 }
 .custom-navbar img {
-  width: 45px;
-  height: 45px;
-  margin: 5px;
+  width: 45px; /* Configuración del ancho */
+  height: 45px; /* Configuración de la altura */
+  margin: 5px; /* Configuración de los márgenes */
+  transition: 0.5s; /* Transición al pasar el mouse sobre la imagen */
+  /* Estilos al pasar el mouse sobre la imagen */
 }
 .custom-navbar img:hover {
-  transition: all 0.5s;
-  box-shadow: 0 0 5px 1px #EDF2F4;
+  box-shadow: 0 0 5px 1px #EDF2F4; /* Sombra al pasar el mouse */
 }
 .custom-navbar .custom-toggler {
-  border: 1px solid #EDF2F4;
+  border: 1px solid #EDF2F4; /* Configuración del borde */
+  /* Estilos al enfocar el botón */
 }
 .custom-navbar .custom-toggler:focus {
-  text-decoration: none;
-  outline: none;
-  box-shadow: 0 0 5px 1px #EDF2F4;
+  text-decoration: none; /* Quita subrayado */
+  outline: none; /* Quita el contorno */
+  box-shadow: 0 0 5px 1px #EDF2F4; /* Sombra al enfocar */
 }
 .custom-navbar .custom-icon {
-  background-image: url(../assets/img/bars-solid.svg);
+  background-image: url(../assets/img/bars-solid.svg); /* Configuración de la imagen de fondo */
 }
 .custom-navbar .nav-link {
-  color: #EDF2F4;
+  color: #EDF2F4; /* Configuración del color de texto */
+  transition: 0.2s; /* Transición al pasar el mouse sobre el enlace */
+  /* Estilos al pasar el mouse sobre el enlace */
 }
 .custom-navbar .nav-link:hover {
-  color: #E2E2E2;
-  text-shadow: 2px 2px 8px #EDF2F4;
+  color: #E2E2E2; /* Cambia el color de texto */
+  text-shadow: 2px 2px 8px #EDF2F4; /* Sombra de texto */
 }
 
+/* Importación del estilo del vídeo en la página de inicio */
+/* Estilos para videos personalizados */
 .custom-video {
+  /* Reducir el brillo del video */
   filter: brightness(40%);
+  /* Ajustar el tamaño del fondo */
   background-size: cover;
+  /* Definir el ancho utilizando una variable */
   width: 100%;
 }
 
+/* Estilos para el contenido dentro de los videos personalizados */
 .custom-video-content {
+  /* Color del texto */
   color: #EDF2F4;
 }
 
+/* Estilos para fondos con color blanco antirreflejo */
 .bg-anti-white {
+  /* Fondo de color blanco antirreflejo */
   background-color: #EDF2F4;
 }
 
+/* Estilos para fondos blancos */
 .bg-white {
+  /* Fondo blanco */
   background-color: white;
 }
 
+/* Estilos para líneas horizontales en videos personalizados */
 .custom-hr-video {
+  /* Margen utilizando una variable */
   margin: 1;
+  /* Color del texto */
   color: #EDF2F4;
+  /* Opacidad completa */
   opacity: 1;
+  /* Sin borde */
   border: none;
+  /* Altura utilizando una variable */
   height: 4px;
+  /* Fondo de color blanco antirreflejo */
   background-color: #EDF2F4;
 }
 
+/* Importación del estilo del contenido principal en la página de inicio */
+/* Aplicando estilos específicos para dispositivos con ancho máximo de 600px */
 @media (max-width: 600px) {
+  /* Ajustando estilos para la clase .descripcion-index */
   .descripcion-index {
-    margin: 20px !important;
-    padding: 20px !important;
-    text-align: justify !important;
+    margin: 20px !important; /* Estableciendo márgenes */
+    padding: 20px !important; /* Añadiendo relleno */
+    text-align: justify !important; /* Alineando texto justificado */
   }
 }
+/* Estilos para el contenedor de categorías */
 .container-categorias {
-  width: 90%;
+  width: 90%; /* Estableciendo el ancho del contenedor */
+  /* Estilos para los elementos #box-1, #box-2, #box-3 */
+  /* Estilos específicos para #box-1 */
+  /* Estilos específicos para #box-2 */
+  /* Estilos específicos para #box-3 */
 }
 .container-categorias #box-1,
 .container-categorias #box-2,
 .container-categorias #box-3 {
-  background-size: cover;
-  height: 400px;
-  flex: 1;
-  transition: 1s;
+  background-size: cover; /* Ajustando tamaño de fondo */
+  height: 400px; /* Estableciendo altura */
+  flex: 1; /* Flexibilidad */
+  transition: 1s; /* Animación de transición */
+  /* Estilos para los elementos internos */
 }
 .container-categorias #box-1 div,
 .container-categorias #box-2 div,
 .container-categorias #box-3 div {
-  opacity: 0;
-  transition: all 0.5s;
-  background-color: white;
-  box-shadow: 0 0 5px 1px #313638 inset;
+  opacity: 0; /* Opacidad inicial */
+  transition: all 0.5s; /* Animación de transición */
+  background-color: white; /* Color de fondo */
+  box-shadow: 0 0 5px 1px #313638 inset; /* Sombra */
+  /* Estilos para los elementos h3 y a */
 }
 .container-categorias #box-1 div h3,
 .container-categorias #box-1 div a,
@@ -103,149 +145,176 @@ body {
 .container-categorias #box-2 div a,
 .container-categorias #box-3 div h3,
 .container-categorias #box-3 div a {
-  opacity: 0;
-  transition: all 0.5s;
+  opacity: 0; /* Opacidad inicial */
+  transition: all 0.5s; /* Animación de transición */
 }
 .container-categorias #box-1 div h3,
 .container-categorias #box-2 div h3,
 .container-categorias #box-3 div h3 {
-  color: black;
+  color: black; /* Color de texto */
 }
 .container-categorias #box-1 div a,
 .container-categorias #box-2 div a,
 .container-categorias #box-3 div a {
-  text-decoration: none;
-  background-color: #313638;
-  color: #EDF2F4;
-  padding: 5px;
-  border-style: normal;
-  box-shadow: 0 0 5px 1px #313638;
+  text-decoration: none; /* Sin subrayado */
+  background-color: #313638; /* Color de fondo */
+  color: #EDF2F4; /* Color de texto */
+  padding: 5px; /* Añadiendo relleno */
+  border-style: normal; /* Estilo de borde */
+  box-shadow: 0 0 5px 1px #313638; /* Sombra */
+  /* Estilos para el estado de hover */
 }
 .container-categorias #box-1 div a:hover,
 .container-categorias #box-2 div a:hover,
 .container-categorias #box-3 div a:hover {
-  border-style: groove;
-  scale: 0.9;
+  border-style: groove; /* Cambiando estilo de borde */
+  scale: 0.9; /* Escalando */
 }
 .container-categorias #box-1 {
-  background-image: url(https://i.imgur.com/Hkv8ZCH.jpg);
+  background-image: url(https://i.imgur.com/Hkv8ZCH.jpg); /* Estableciendo imagen de fondo */
+  /* Estilos para el estado de hover */
 }
 .container-categorias #box-1:hover {
-  flex: 4;
-  box-shadow: 0 0 3px 2px #313638;
+  flex: 4; /* Flexibilidad */
+  box-shadow: 0 0 3px 2px #313638; /* Sombra */
 }
 .container-categorias #box-1:hover div {
-  opacity: 1;
+  opacity: 1; /* Mostrando elemento interno */
 }
 .container-categorias #box-1:hover h3 {
-  opacity: 1;
+  opacity: 1; /* Mostrando elemento interno */
 }
 .container-categorias #box-1:hover a {
-  opacity: 1;
+  opacity: 1; /* Mostrando elemento interno */
 }
 .container-categorias #box-2 {
-  background-image: url(https://i.imgur.com/MfXUb9j.jpg);
+  background-image: url(https://i.imgur.com/MfXUb9j.jpg); /* Estableciendo imagen de fondo */
+  /* Estilos para el estado de hover */
 }
 .container-categorias #box-2:hover {
-  flex: 4;
-  box-shadow: 0 0 3px 2px #313638;
+  flex: 4; /* Flexibilidad */
+  box-shadow: 0 0 3px 2px #313638; /* Sombra */
 }
 .container-categorias #box-2:hover div {
-  opacity: 1;
+  opacity: 1; /* Mostrando elemento interno */
 }
 .container-categorias #box-2:hover h3 {
-  opacity: 1;
+  opacity: 1; /* Mostrando elemento interno */
 }
 .container-categorias #box-2:hover a {
-  opacity: 1;
+  opacity: 1; /* Mostrando elemento interno */
 }
 .container-categorias #box-3 {
-  background-image: url(https://i.imgur.com/2jT6EaV.jpg);
+  background-image: url(https://i.imgur.com/2jT6EaV.jpg); /* Estableciendo imagen de fondo */
+  /* Estilos para el estado de hover */
 }
 .container-categorias #box-3:hover {
-  flex: 4;
-  box-shadow: 0 0 3px 2px #313638;
+  flex: 4; /* Flexibilidad */
+  box-shadow: 0 0 3px 2px #313638; /* Sombra */
 }
 .container-categorias #box-3:hover div {
-  opacity: 1;
+  opacity: 1; /* Mostrando elemento interno */
 }
 .container-categorias #box-3:hover h3 {
-  opacity: 1;
+  opacity: 1; /* Mostrando elemento interno */
 }
 .container-categorias #box-3:hover a {
-  opacity: 1;
+  opacity: 1; /* Mostrando elemento interno */
 }
 
+/* Estilos específicos para dispositivos con ancho máximo de 850px */
 @media (max-width: 850px) {
   .container-categorias {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    height: 800px;
+    width: 90%; /* Estableciendo el ancho del contenedor */
+    display: flex; /* Cambiando a flexbox */
+    flex-direction: column; /* Cambiando dirección de los elementos */
+    height: 800px; /* Estableciendo altura */
   }
 }
+/* Estilos para la sección de categorías */
 .seccionCategoria {
   display: flex;
   justify-content: center;
   align-items: end;
   text-align: center;
+  /* Incluyendo mixins */
 }
 
+/* Importación del estilo del pie de página */
+/* Estilo del footer */
 footer {
-  background-color: #313638;
+  background-color: #313638; /* Establece el color de fondo del footer */
+  /* Estilo de la navegación del footer */
+  /* Estilo de los iconos de redes sociales en el footer */
+  /* Estilo del texto de derechos de autor en el footer */
 }
 footer .footer-nav {
-  padding-top: 30px;
-  padding-bottom: 15px;
+  padding-top: 30px; /* Espaciado superior del menú de navegación */
+  padding-bottom: 15px; /* Espaciado inferior del menú de navegación */
+  /* Estilo de los enlaces dentro de la navegación */
+  /* Estilo de la línea recta */
 }
 footer .footer-nav a {
-  color: #EDF2F4;
-  text-decoration: none;
+  color: #EDF2F4; /* Color del texto de los enlaces */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  /* Estilo al pasar el ratón sobre los enlaces */
 }
 footer .footer-nav a:hover {
-  transition: all 0.5s;
-  border-bottom: 3px solid #EDF2F4;
+  transition: all 0.5s; /* Animación de transición */
+  border-bottom: 3px solid #EDF2F4; /* Agrega una línea inferior al pasar el ratón */
 }
 footer .footer-nav .linea-recta {
-  background-color: #EDF2F4;
+  background-color: #EDF2F4; /* Color de la línea recta */
 }
 footer .footer-rs {
-  padding-top: 15px;
-  padding-bottom: 30px;
+  padding-top: 15px; /* Espaciado superior de los iconos de redes sociales */
+  padding-bottom: 30px; /* Espaciado inferior de los iconos de redes sociales */
+  /* Estilo de los enlaces a redes sociales */
 }
 footer .footer-rs a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #EDF2F4;
+  margin: 0 15px; /* Margen de los enlaces a redes sociales */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: #EDF2F4; /* Color del texto de los enlaces */
+  transition: 0.5s; /* Transición de animación */
+  /* Estilo al pasar el ratón sobre los enlaces */
 }
 footer .footer-rs a:hover {
-  transition: all 0.5s;
-  transform: scale(1.3) rotate(360deg);
+  transform: scale(1.3) rotate(360deg); /* Aumenta el tamaño y rota el icono */
 }
 footer .footer-cr {
-  background-color: white;
-  padding: 10px;
+  background-color: white; /* Color de fondo del texto de derechos de autor */
+  padding: 10px; /* Espaciado del texto de derechos de autor */
 }
 
+/* Media query para pantallas de ancho máximo de 550px */
 @media (max-width: 550px) {
+  /* Oculta la línea recta en pantallas pequeñas */
   .linea-recta {
-    display: none;
+    display: none; /* Oculta la línea recta */
   }
+  /* Estilo de la navegación del footer en pantallas pequeñas */
   .footer-nav {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Espaciado entre elementos */
   }
 }
+/* Mixin para centrar elementos flexibles */
 .dFlexCenter {
   display: flex;
   justify-content: center;
+  /* Incluye el mixin para centrar elementos flexibles */
 }
 
+/* Importación del estilo de la información de la categoría */
+/* Estilo para la sección de información de categoría */
 .seccion-info-categoria {
+  /* Aplica margen superior usando un valor de mapa */
   margin-top: 70px;
-  padding: 2vh;
+  padding: 2vh; /* Añade relleno */
+  /* Establece las áreas de la cuadrícula para los elementos */
+  /* Define el contenedor de la cuadrícula */
 }
 .seccion-info-categoria .item-1 {
   grid-area: img1;
@@ -264,54 +333,63 @@ footer .footer-cr {
   grid-template-areas: "text1 text1 img3 img1" "text1 text1 img3 img1" "img2 img2 img3 img1" "img2 img2 img3 img1";
   grid-auto-rows: 1fr;
   column-gap: 10px;
-  height: 86vh;
+  height: 86vh; /* Asigna altura usando un valor de mapa */
+  /* Estilos para las imágenes */
+  /* Estilos para el texto */
 }
 .seccion-info-categoria .cuadricula-contenedor .imagen {
-  padding: 2vh;
+  padding: 2vh; /* Agrega relleno */
 }
 .seccion-info-categoria .cuadricula-contenedor .imagen img {
-  box-shadow: 0 0 5px 1px #313638;
+  box-shadow: 0 0 5px 1px #313638; /* Aplica sombra a las imágenes */
 }
 .seccion-info-categoria .cuadricula-contenedor .texto {
-  padding: 2vh;
-  gap: 10px;
+  padding: 2vh; /* Añade relleno */
+  gap: 10px; /* Define el espacio entre elementos secundarios */
 }
 .seccion-info-categoria .cuadricula-contenedor .texto p {
-  text-align: justify;
-  line-height: 2;
+  text-align: justify; /* Alinea el texto justificado */
+  line-height: 2; /* Establece la altura de línea */
 }
 
+/* Estilos de medios para pantallas pequeñas */
 @media (max-width: 900px) {
   .seccion-info-categoria .cuadricula-contenedor {
+    /* Ajustes para el contenedor de la cuadrícula */
     grid-template-areas: "text1" "img3";
+    /* Estilos adicionales para imágenes */
   }
   .seccion-info-categoria .cuadricula-contenedor .texto {
-    gap: 0;
+    gap: 0; /* Elimina el espacio entre elementos */
   }
   .seccion-info-categoria .cuadricula-contenedor .texto h1, .seccion-info-categoria .cuadricula-contenedor .texto p {
-    overflow-y: hidden;
+    overflow-y: hidden; /* Oculta el desbordamiento vertical */
   }
   .seccion-info-categoria .cuadricula-contenedor .item-1, .seccion-info-categoria .cuadricula-contenedor .item-2 {
-    display: none;
+    display: none; /* Oculta los elementos 1 y 2 */
   }
   .seccion-info-categoria .cuadricula-contenedor .imagen {
-    padding: 20px;
+    padding: 20px; /* Añade más relleno */
   }
 }
+/* Estilo del divisor de categorías */
 .divisor-categorias {
-  height: 5px;
-  width: 95%;
-  background-color: #313638;
-  opacity: 0.2;
-  margin-bottom: 20px;
+  height: 5px; /* Asigna altura usando un valor de mapa */
+  width: 95%; /* Asigna ancho usando un valor de mapa */
+  background-color: #313638; /* Define el color de fondo */
+  opacity: 0.2; /* Define la opacidad */
+  margin-bottom: 20px; /* Aplica margen inferior usando un valor de mapa */
 }
 
+/* Estilo para el aspecto de los ítems */
 .aspectoItem {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Incluye mixin para ajustar el tamaño */
 }
 
+/* Estilo para el contenedor de información de categoría */
 .containerInformacionCategoria {
   display: flex;
   flex-direction: column;
@@ -319,86 +397,138 @@ footer .footer-cr {
   width: 100%;
   height: 100%;
   justify-content: center;
+  /* Incluye mixin para hacer contenedor flexible */
 }
 
+/* Importación del estilo de la galería de la categoría */
+/* Estilos para el descargo de responsabilidad */
 .disclaimer {
+  /* Establece el ancho del elemento utilizando una variable */
   width: 95%;
+  /* Establece el color del texto utilizando una variable */
   color: #aaa200;
+  /* Espaciado entre letras */
   letter-spacing: 1px;
-  font-size: 12px;
+  /* Tamaño de fuente */
+  font-size: 16px;
 }
 
+/* Estilos para el contenedor de la galería */
 .container-galeria {
+  /* Añade espaciado alrededor del contenedor */
   padding-left: 4vw;
   padding-right: 4vw;
   padding-bottom: 4vw;
   padding-top: 2vh;
+  /* Establece el espacio entre elementos secundarios */
   gap: 4vw;
+  /* Estilos para cada ítem de la galería */
 }
 .container-galeria .item {
+  /* Color de fondo */
   background-color: hsl(0, 0%, 94%);
+  /* Establece el ancho del ítem utilizando una variable */
   width: 300px;
+  /* Transición para cambios suaves */
+  transition: 0.3s;
+  /* Estilos para la imagen del ítem */
+  /* Estilos para el texto del ítem */
+  /* Efecto al pasar el ratón sobre el ítem */
 }
 .container-galeria .item .imagen-carta {
+  /* Establece la altura utilizando una variable */
   height: 200px;
+  /* Establece el ancho utilizando una variable */
   width: 300px;
 }
 .container-galeria .item .card-text {
+  /* Margen interno utilizando una variable */
   margin: 15px 15px 20px;
+  /* Espaciado entre elementos secundarios */
   gap: 15px;
+  /* Estilos para la descripción del ítem */
+  /* Estilos para el precio del ítem */
 }
 .container-galeria .item .card-text .descripcion-carta {
+  /* Alineación justificada */
   text-align: justify;
 }
 .container-galeria .item .card-text .precio-carta {
+  /* Peso de la fuente */
   font-weight: bolder;
+  /* Color del texto utilizando una variable */
   color: #aaa200;
 }
 .container-galeria .item:hover {
-  transition: all 0.3s;
+  /* Sombra alrededor del ítem */
   box-shadow: 0 10px 15px 0.5px rgb(139, 139, 139);
+  /* Escalado del ítem */
   scale: 0.9;
 }
 
+/* Estilos para la galería flexible */
 .galleryFlex {
+  /* Incluye mixins para el contenedor de la galería flexible */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  /* Estilos para cada tarjeta en la galería flexible */
 }
 .galleryFlex .cardFlex {
+  /* Incluye mixins para cada tarjeta */
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Estilos para el texto flexible dentro de la tarjeta */
 }
 .galleryFlex .cardFlex .textoFlexible {
+  /* Incluye mixins para el texto flexible */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Importación del estilo del formulario de contacto */
+/* Estilos para la sección de la página de contacto */
 .pagina-contacto {
+  /* Establecer un margen superior utilizando una variable de mapa */
   margin-top: 60px;
+  /* Estilos para el iframe dentro de la página de contacto */
+  /* Estilos para el botón de contacto */
+  /* Estilos para el textarea dentro de la página de contacto */
 }
 .pagina-contacto iframe {
+  /* Establecer altura utilizando una variable de mapa */
   height: 350px;
 }
 .pagina-contacto .boton-contacto {
+  /* Establecer color de fondo utilizando una variable */
   background-color: #C2C0DA;
+  /* Establecer ancho utilizando una variable de mapa */
   width: 100%;
+  /* Transición al hacer hover sobre el botón */
+  transition: 0.1s;
+  /* Estilos al hacer hover sobre el botón */
 }
 .pagina-contacto .boton-contacto:hover {
-  transition: all 0s;
+  /* Reducir tamaño del botón */
   scale: 0.9;
+  /* Cambiar color del texto al hacer hover */
   color: #EDF2F4;
 }
 .pagina-contacto textarea {
+  /* Establecer altura utilizando una variable de mapa */
   height: 10rem;
 }
 
+/* Estilos para la sección de la página de contacto con imagen de fondo */
 .bg-image-contacto {
+  /* Establecer imagen de fondo */
   background-image: url("https://i.imgur.com/LLDEbLl.jpg");
+  /* Centrar la imagen de fondo */
   background-position: center;
+  /* Ajustar tamaño de la imagen de fondo para cubrir todo el contenedor */
   background-size: cover;
 }
 

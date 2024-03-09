@@ -1,3 +1,8 @@
+// Mixin para establecer propiedades flexibles en un contenedor
+// Parámetros:
+//   $justify: define la alineación horizontal del contenido
+//   $align: define la alineación vertical del contenido
+//   $textAlign: define la alineación del texto dentro del contenedor
 @mixin categoriaFlexible($justify, $align, $textAlign ){
     display: flex;
     justify-content: $justify;
@@ -5,38 +10,48 @@
     text-align: $textAlign;
 }
 
+// Mixin para centrar contenido horizontalmente dentro de un contenedor flexible
 @mixin centerFlexible(){
     display: flex;
     justify-content: center;
 }
 
+// Mixin para establecer un ancho y alto con 'object-fit' en una imagen
+// Parámetros:
+//   $ancho: ancho de la imagen
+//   $alto: alto de la imagen
+//   $size: modo de ajuste para la imagen (cover, contain, etc.)
 @mixin widthHeightCover($ancho, $alto, $size){
     width: $ancho;
     height: $alto;
     object-fit: $size;
 }
 
+// Mixin para crear un contenedor flexible con 100% de ancho y alto
 @mixin containerFlex100(){
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: map-get($widths, ancho-100 );
-    height: map-get($heights, alto-100);
+    width: map-get($widths, ancho-100 ); // Se asume que se define el mapa $widths fuera del mixin
+    height: map-get($heights, alto-100); // Se asume que se define el mapa $heights fuera del mixin
     justify-content: center;
 }
 
+// Mixin para establecer propiedades flexibles en un contenedor de galería
 @mixin containerGalleryFlex(){
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
+// Mixin para estilizar un elemento de la galería como una tarjeta
 @mixin galleryItemCard(){
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+// Mixin para establecer propiedades flexibles en un contenedor de texto dentro de una tarjeta
 @mixin flexTextCard(){
     display: flex;
     flex-direction: column;

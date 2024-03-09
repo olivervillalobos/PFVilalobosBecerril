@@ -16,13 +16,14 @@
     "url": "https://github.com/olivervillalobos/Verdadera-Tijuana/issues"
   },
   "homepage": "https://github.com/olivervillalobos/Verdadera-Tijuana/tree/main#readme",
-
   "liveSassCompile.settings.formats": [
     {
-        "format": "expanded",
-        "extensionName": ".css",
-        "savePath": "/css"
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
     }
-]
+  ],
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
-

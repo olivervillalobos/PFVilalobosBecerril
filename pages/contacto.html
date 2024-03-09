@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<!--Aqui se agrega el atributo de lenguaje para que se pueda interpretar en el idioma ingles.-->
 <html lang="en">
-  <!--En el head se agrega lo necesario para que interrete los caracteres mas comunes, el titulo de la pagina, los links a la hoja de estilos, de js, de fontawesome y el favicon-->
   <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>verdadera Tijuana</title>
+    <meta name="description" content="¡Contáctanos hoy para descubrir los mejores paquetes turísticos en Tijuana! Completa nuestro formulario de contacto para obtener más información.">
+    <!-- Palabras clave para SEO -->
+    <meta name="keywords" content="Tijuana, paquetes turísticos, contacto, información, formulario, turismo, viaje, México, vacaciones, experiencias, descubrir, reservas, consulta, destinos, diversión, aventura">
+
+
+    <!-- Título de la página -->
+    <title>Contacto | verdadera Tijuana</title>
+    <!-- Enlaces a archivos CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Ícono de la página -->
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <!-- Biblioteca de iconos Font Awesome -->
     <script
       src="https://kit.fontawesome.com/031b0c1a95.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <!--En el body se agrega el contenido de la pagina, en este caso al body se le otorgo un color de fondo-->
   <body>
-    <!--El header contiene la barra de navegacion, en la cual inluye un logo y ligas-->
+    <!-- Encabezado de la página -->
     <header>
+      <!-- Barra de navegación -->
       <nav class="navbar navbar-expand-sm fixed-top custom-navbar">
         <div class="container-fluid">
+          <!-- Logo -->
           <a class="navbar-brand me-auto" href="../index.html">
             <img
               class="rounded-circle"
@@ -27,6 +36,7 @@
               alt="Logo de verdadera Tijuana"
             />
           </a>
+          <!-- Botón de alternar menú en dispositivos móviles -->
           <button
             class="navbar-toggler custom-toggler"
             type="button"
@@ -38,6 +48,7 @@
           >
             <span class="navbar-toggler-icon custom-icon"> </span>
           </button>
+          <!-- Contenido del menú de navegación -->
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav mx-auto">
               <a class="nav-link mx-2" href="../index.html">Inicio</a>
@@ -60,13 +71,14 @@
         </div>
       </nav>
     </header>
-    <!--Dentro del main se tiene un encabezado que indica de que manera ponerse en contacto, usando un h1 y p.-->
+    <!-- Contenido principal -->
     <main class="bg-image-contacto">
       <div class="container-fluid p-5 pagina-contacto">
         <div class="row justify-content-center">
           <div class="col-xl-10">
+            <!-- Sección de contacto -->
             <section>
-              <h2 class="display-6 fs-2">Ponte en contacto</h2>
+              <h1 class="display-6 fs-2">Ponte en contacto</h1>
               <p class="fs-5 lead">
                 Si quieres conocer más sobre la ciudad y cotizar un paquete
                 turístico, deja tus datos de contacto en la forma de abajo y el
@@ -74,15 +86,19 @@
                 posible.
               </p>
             </section>
+            <!-- Formulario de contacto -->
             <div class="card border-0 rounded-3 overflow-hidden">
               <div class="card-body p-0">
                 <div class="row g-0">
+                  <!-- Sección de formulario -->
                   <div class="col-sm-6 p-4">
                     <div class="text-center">
                       <div class="h3 fw-light">Contacto</div>
                     </div>
+                    <!-- Formulario de contacto -->
                     <form>
                       <div class="form-row">
+                        <!-- Campos de entrada -->
                         <div class="col mb-3">
                           <label for="nombre">Nombre</label>
                           <input
@@ -122,6 +138,7 @@
                             placeholder="Escribenos tus comentarios"
                           ></textarea>
                         </div>
+                        <!-- Botón de enviar -->
                         <button
                           class="btn btn-lg boton-contacto"
                           type="submit"
@@ -134,11 +151,12 @@
                       </div>
                     </form>
                   </div>
+                  <!-- Mapa de ubicación -->
                   <div
                     class="col-sm-6 p-4 d-flex flex-column justify-content-between"
                   >
                     <div class="text-center">
-                      <div class="h3 fw-light">Punto de Reunión</div>
+                      <div class="h2 fw-light">Punto de Reunión</div>
                       <p class="fs-6">
                         Las caminatas turisticas o paquetes turisticos
                         personalizados salen de este punto, el dia y la hora se
@@ -146,6 +164,7 @@
                         el equipo de Verdadera Tijuana.
                       </p>
                     </div>
+                    <!-- Mapa incrustado de Google -->
                     <div>
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719.2222974110671!2d-117.03989461940476!3d32.535564946267996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94900b6332979%3A0xa1a875eb7763c81f!2sIglesia%20de%20Nuestra%20Se%C3%B1ora%20de%20Guadalupe%2C%20antigua%20Catedral!5e0!3m2!1sen!2smx!4v1706763548977!5m2!1sen!2smx"
@@ -164,14 +183,13 @@
         </div>
       </div>
     </main>
-    <!--Aqui se agrega el pie de pagina el cual contiene tres secciones.-->
+    <!-- Pie de página -->
     <footer class="w-100">
-      <section
-        class="dFlexCenter align-items-center footer-nav"
-      >
-      <a href="../index.html">Inicio</a>
+      <!-- Navegación del pie de página -->
+      <section class="dFlexCenter align-items-center footer-nav">
+        <a href="../index.html">Inicio</a>
         <div class="mx-2 vr linea-recta"></div>  
-      <a href="../pages/restaurantes.html">Restaurantes</a>
+        <a href="../pages/restaurantes.html">Restaurantes</a>
         <div class="mx-2 vr linea-recta"></div>
         <a href="../pages/cafeterias.html">Cafeterias</a>
         <div class="mx-2 vr linea-recta"></div>
@@ -181,6 +199,7 @@
         <div class="mx-2 vr linea-recta"></div>
         <a href="../pages/contacto.html">Contacto</a>
       </section>
+      <!-- Redes sociales -->
       <section class="dFlexCenter footer-rs">
         <a href="https://www.facebook.com/" target="_blank">
           <i class="fa-brands fa-facebook"></i>
@@ -201,10 +220,12 @@
           <i class="fa-brands fa-youtube"></i>
         </a>
       </section>
+      <!-- Derechos de autor -->
       <section class="dFlexCenter footer-cr">
         <span>Copyright © 2024 Oliver Villalobos, Group.</span>
       </section>
     </footer>
+    <!-- Archivos de JavaScript -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
   </body>

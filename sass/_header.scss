@@ -1,31 +1,46 @@
-.custom-navbar{
-    background-color: $onyx !important;
-    img{
-        width: map-get($widths, ancho-45px );
-        height: map-get($heights, alto-45px );
-        margin: map-get($margins, margen-5px);
-        &:hover{
-            transition: all 0.5s;
-            box-shadow: 0 0 5px 1px $anti-flash-white;
-        }
+/* Estilo para la barra de navegación personalizada */
+.custom-navbar {
+    background-color: $onyx !important; /* Configuración del color de fondo */
+    
+    /* Estilos para la imagen en la barra de navegación */
+    img {
+        width: map-get($widths, ancho-45px ); /* Configuración del ancho */
+        height: map-get($heights, alto-45px ); /* Configuración de la altura */
+        margin: map-get($margins, margen-5px); /* Configuración de los márgenes */
+        transition: 0.5s; /* Transición al pasar el mouse sobre la imagen */
         
-    }
-    .custom-toggler{
-        border: 1px solid $anti-flash-white;
-        &:focus{
-            text-decoration: none;
-            outline: none;
-            box-shadow: 0 0 5px 1px $anti-flash-white;
+        /* Estilos al pasar el mouse sobre la imagen */
+        &:hover {
+            box-shadow: 0 0 5px 1px $anti-flash-white; /* Sombra al pasar el mouse */
         }
     }
-    .custom-icon{
-        background-image: url(../assets/img/bars-solid.svg);
+    
+    /* Estilos para el botón de menú personalizado */
+    .custom-toggler {
+        border: 1px solid $anti-flash-white; /* Configuración del borde */
+        
+        /* Estilos al enfocar el botón */
+        &:focus {
+            text-decoration: none; /* Quita subrayado */
+            outline: none; /* Quita el contorno */
+            box-shadow: 0 0 5px 1px $anti-flash-white; /* Sombra al enfocar */
+        }
     }
-    .nav-link{
-        color: $anti-flash-white;
-        &:hover{
-            color: $light-periwinkle;
-            text-shadow:  2px 2px 8px $anti-flash-white;
+    
+    /* Estilos para el icono del menú personalizado */
+    .custom-icon {
+        background-image: url(../assets/img/bars-solid.svg); /* Configuración de la imagen de fondo */
+    }
+    
+    /* Estilos para los enlaces de navegación */
+    .nav-link {
+        color: $anti-flash-white; /* Configuración del color de texto */
+        transition: 0.2s; /* Transición al pasar el mouse sobre el enlace */
+        
+        /* Estilos al pasar el mouse sobre el enlace */
+        &:hover {
+            color: $light-periwinkle; /* Cambia el color de texto */
+            text-shadow: 2px 2px 8px $anti-flash-white; /* Sombra de texto */
         }
     }
 }

@@ -1,10 +1,14 @@
+/* Estilo para la sección de información de categoría */
 .seccion-info-categoria {
+    /* Aplica margen superior usando un valor de mapa */
     margin-top: map-get($margins, margen-arriba-70px );
-    padding: 2vh;
+    padding: 2vh; /* Añade relleno */
+    /* Establece las áreas de la cuadrícula para los elementos */
     .item-1{ grid-area: img1; }
     .item-2{ grid-area: img2; }
     .item-3{ grid-area: text1; }
     .item-4{ grid-area: img3; }
+    /* Define el contenedor de la cuadrícula */
     .cuadricula-contenedor {
         display: grid;
         grid-template-areas: 
@@ -14,56 +18,66 @@
         'img2 img2 img3 img1';
         grid-auto-rows: 1fr;
         column-gap: 10px;
-        height: map-get($heights , alto-86vh );
+        height: map-get($heights , alto-86vh ); /* Asigna altura usando un valor de mapa */
+        /* Estilos para las imágenes */
         .imagen {
-            padding: 2vh;
+            padding: 2vh; /* Agrega relleno */
             img {
-                box-shadow: 0 0 5px 1px $onyx;
+                box-shadow: 0 0 5px 1px $onyx; /* Aplica sombra a las imágenes */
             }
         }
+        /* Estilos para el texto */
         .texto {
-            padding: 2vh;
-            gap: 10px;
+            padding: 2vh; /* Añade relleno */
+            gap: 10px; /* Define el espacio entre elementos secundarios */
             p {
-                text-align: justify;
-                line-height: 2;
+                text-align: justify; /* Alinea el texto justificado */
+                line-height: 2; /* Establece la altura de línea */
             }
         }
     }
 }
+
+/* Estilos de medios para pantallas pequeñas */
 @media (max-width: 900px){
     .seccion-info-categoria{
         .cuadricula-contenedor{
+            /* Ajustes para el contenedor de la cuadrícula */
             .texto{
-                gap: 0;
+                gap: 0; /* Elimina el espacio entre elementos */
                 h1, p{
-                    overflow-y: hidden;
+                    overflow-y: hidden; /* Oculta el desbordamiento vertical */
                 }
             }
             .item-1, .item-2{
-                display: none;
+                display: none; /* Oculta los elementos 1 y 2 */
             }
             grid-template-areas: 
             'text1'
             'img3';
+            /* Estilos adicionales para imágenes */
             .imagen {
-                padding: 20px;
+                padding: 20px; /* Añade más relleno */
             }
         }
     }
 }
+
+/* Estilo del divisor de categorías */
 .divisor-categorias{
-    height: map-get($heights, alto-5px );
-    width: map-get($widths , ancho-95 );
-    background-color: $onyx;
-    opacity: 0.2;
-    margin-bottom: map-get($margins, margen-abajo-20px );
+    height: map-get($heights, alto-5px ); /* Asigna altura usando un valor de mapa */
+    width: map-get($widths , ancho-95 ); /* Asigna ancho usando un valor de mapa */
+    background-color: $onyx; /* Define el color de fondo */
+    opacity: 0.2; /* Define la opacidad */
+    margin-bottom: map-get($margins, margen-abajo-20px ); /* Aplica margen inferior usando un valor de mapa */
 }
 
+/* Estilo para el aspecto de los ítems */
 .aspectoItem{
-    @include widthHeightCover(map-get($widths, ancho-100), map-get($heights, alto-100),cover);
+    @include widthHeightCover(map-get($widths, ancho-100), map-get($heights, alto-100),cover); /* Incluye mixin para ajustar el tamaño */
 }
 
+/* Estilo para el contenedor de información de categoría */
 .containerInformacionCategoria{
-    @include containerFlex100();
+    @include containerFlex100(); /* Incluye mixin para hacer contenedor flexible */
 }

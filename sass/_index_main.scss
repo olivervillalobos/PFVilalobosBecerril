@@ -1,104 +1,131 @@
+/* Aplicando estilos específicos para dispositivos con ancho máximo de 600px */
 @media (max-width: 600px) {
+    /* Ajustando estilos para la clase .descripcion-index */
     .descripcion-index{
-        margin: map-get($margins, margen-20px ) !important;
-        padding: 20px !important;
-        text-align: justify !important;
+        margin: map-get($margins, margen-20px ) !important; /* Estableciendo márgenes */
+        padding: 20px !important; /* Añadiendo relleno */
+        text-align: justify !important; /* Alineando texto justificado */
     }
 }
+
+/* Estilos para el contenedor de categorías */
 .container-categorias{
-    width: map-get($widths, ancho-90 );
+    width: map-get($widths, ancho-90 ); /* Estableciendo el ancho del contenedor */
+    
+    /* Estilos para los elementos #box-1, #box-2, #box-3 */
     #box-1,
     #box-2,
     #box-3 {
-        background-size: cover;
-        height: map-get($heights, alto-400px );
-        flex: 1;
-        transition: 1s;
+        background-size: cover; /* Ajustando tamaño de fondo */
+        height: map-get($heights, alto-400px ); /* Estableciendo altura */
+        flex: 1; /* Flexibilidad */
+        transition: 1s; /* Animación de transición */
+        
+        /* Estilos para los elementos internos */
         div {
-            opacity: 0;
-            transition: all 0.5s;
-            background-color: white;
-            box-shadow: 0 0 5px 1px $onyx inset;
+            opacity: 0; /* Opacidad inicial */
+            transition: all 0.5s; /* Animación de transición */
+            background-color: white; /* Color de fondo */
+            box-shadow: 0 0 5px 1px $onyx inset; /* Sombra */
+            
+            /* Estilos para los elementos h3 y a */
             h3,
             a {
-                opacity: 0;
-                transition: all 0.5s;
+                opacity: 0; /* Opacidad inicial */
+                transition: all 0.5s; /* Animación de transición */
             }
             h3 {
-                color: black;
+                color: black; /* Color de texto */
             }
             a {
-                text-decoration: none;
-                background-color: $onyx;
-                color: $anti-flash-white;
-                padding: 5px;
-                border-style: normal;
-                box-shadow: 0 0 5px 1px $onyx;
+                text-decoration: none; /* Sin subrayado */
+                background-color: $onyx; /* Color de fondo */
+                color: $anti-flash-white; /* Color de texto */
+                padding: 5px; /* Añadiendo relleno */
+                border-style: normal; /* Estilo de borde */
+                box-shadow: 0 0 5px 1px $onyx; /* Sombra */
+                
+                /* Estilos para el estado de hover */
                 &:hover{
-                    border-style: groove;
-                    scale: 0.9;
+                    border-style: groove; /* Cambiando estilo de borde */
+                    scale: 0.9; /* Escalando */
                 }
             }
         }
     }
+    
+    /* Estilos específicos para #box-1 */
     #box-1 {
-        background-image: url(https://i.imgur.com/Hkv8ZCH.jpg);
+        background-image: url(https://i.imgur.com/Hkv8ZCH.jpg); /* Estableciendo imagen de fondo */
+        
+        /* Estilos para el estado de hover */
         &:hover{
-            flex: 4;
-            box-shadow: 0 0 3px 2px $onyx;
+            flex: 4; /* Flexibilidad */
+            box-shadow: 0 0 3px 2px $onyx; /* Sombra */
             div{
-                opacity: 1;
+                opacity: 1; /* Mostrando elemento interno */
             }
             h3{
-                opacity: 1;
+                opacity: 1; /* Mostrando elemento interno */
             }
             a{
-                opacity: 1;
+                opacity: 1; /* Mostrando elemento interno */
             }
         }
     }
+    
+    /* Estilos específicos para #box-2 */
     #box-2 {
-        background-image: url(https://i.imgur.com/MfXUb9j.jpg);
+        background-image: url(https://i.imgur.com/MfXUb9j.jpg); /* Estableciendo imagen de fondo */
+        
+        /* Estilos para el estado de hover */
         &:hover{
-            flex: 4;
-            box-shadow: 0 0 3px 2px $onyx;
+            flex: 4; /* Flexibilidad */
+            box-shadow: 0 0 3px 2px $onyx; /* Sombra */
             div{
-                opacity: 1;
+                opacity: 1; /* Mostrando elemento interno */
             }
             h3{
-                opacity: 1;
+                opacity: 1; /* Mostrando elemento interno */
             }
             a{
-                opacity: 1;
+                opacity: 1; /* Mostrando elemento interno */
             }
         }
     }
+    
+    /* Estilos específicos para #box-3 */
     #box-3 {
-        background-image: url(https://i.imgur.com/2jT6EaV.jpg);
+        background-image: url(https://i.imgur.com/2jT6EaV.jpg); /* Estableciendo imagen de fondo */
+        
+        /* Estilos para el estado de hover */
         &:hover{
-            flex: 4;
-            box-shadow: 0 0 3px 2px $onyx;
+            flex: 4; /* Flexibilidad */
+            box-shadow: 0 0 3px 2px $onyx; /* Sombra */
             div{
-                opacity: 1;
+                opacity: 1; /* Mostrando elemento interno */
             }
             h3{
-                opacity: 1;
+                opacity: 1; /* Mostrando elemento interno */
             }
             a{
-                opacity: 1;
+                opacity: 1; /* Mostrando elemento interno */
             }
         }
-    }
-}
-@media (max-width: 850px){
-    .container-categorias{
-        width: map-get($widths, ancho-90 );
-        display: flex;
-        flex-direction: column;
-        height: map-get($heights, alto-800px );
     }
 }
 
+/* Estilos específicos para dispositivos con ancho máximo de 850px */
+@media (max-width: 850px){
+    .container-categorias{
+        width: map-get($widths, ancho-90 ); /* Estableciendo el ancho del contenedor */
+        display: flex; /* Cambiando a flexbox */
+        flex-direction: column; /* Cambiando dirección de los elementos */
+        height: map-get($heights, alto-800px ); /* Estableciendo altura */
+    }
+}
+
+/* Estilos para la sección de categorías */
 .seccionCategoria{
-    @include categoriaFlexible(center, end, center);
+    @include categoriaFlexible(center, end, center); /* Incluyendo mixins */
 }

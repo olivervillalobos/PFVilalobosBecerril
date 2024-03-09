@@ -1,46 +1,87 @@
-.disclaimer{
+/* Estilos para el descargo de responsabilidad */
+.disclaimer {
+    /* Establece el ancho del elemento utilizando una variable */
     width: map-get($widths , ancho-95 );
+    /* Establece el color del texto utilizando una variable */
     color: $yellow-taco-off;
+    /* Espaciado entre letras */
     letter-spacing: 1px;
-    font-size: 12px;
+    /* Tamaño de fuente */
+    font-size: 16px;
 }
+
+/* Estilos para el contenedor de la galería */
 .container-galeria {
+    /* Añade espaciado alrededor del contenedor */
     padding-left: 4vw;
     padding-right: 4vw;
     padding-bottom: 4vw;
     padding-top: 2vh;
+    /* Establece el espacio entre elementos secundarios */
     gap: 4vw;
+
+    /* Estilos para cada ítem de la galería */
     .item {
+        /* Color de fondo */
         background-color: $item-bg;
+        /* Establece el ancho del ítem utilizando una variable */
         width: map-get($widths , ancho-300px );
-        .imagen-carta{
+        /* Transición para cambios suaves */
+        transition: 0.3s;
+
+        /* Estilos para la imagen del ítem */
+        .imagen-carta {
+            /* Establece la altura utilizando una variable */
             height: map-get($heights, alto-200px );
+            /* Establece el ancho utilizando una variable */
             width: map-get($widths , ancho-300px );
         }
-        .card-text{
+
+        /* Estilos para el texto del ítem */
+        .card-text {
+            /* Margen interno utilizando una variable */
             margin: map-get($margins , margen-15px-15px-20px );
+            /* Espaciado entre elementos secundarios */
             gap: 15px;
-            .descripcion-carta{
+
+            /* Estilos para la descripción del ítem */
+            .descripcion-carta {
+                /* Alineación justificada */
                 text-align: justify;
             }
-            .precio-carta{
+
+            /* Estilos para el precio del ítem */
+            .precio-carta {
+                /* Peso de la fuente */
                 font-weight: bolder;
+                /* Color del texto utilizando una variable */
                 color: $yellow-taco-off;
             }
         }
+
+        /* Efecto al pasar el ratón sobre el ítem */
         &:hover {
-            transition: all 0.3s;
+            /* Sombra alrededor del ítem */
             box-shadow: 0 10px 15px 0.5px $item-shadow;
+            /* Escalado del ítem */
             scale: 0.9;
         }
     }
 }
 
-.galleryFlex{
+/* Estilos para la galería flexible */
+.galleryFlex {
+    /* Incluye mixins para el contenedor de la galería flexible */
     @include containerGalleryFlex();
-    .cardFlex{
+
+    /* Estilos para cada tarjeta en la galería flexible */
+    .cardFlex {
+        /* Incluye mixins para cada tarjeta */
         @include galleryItemCard();
-        .textoFlexible{
+
+        /* Estilos para el texto flexible dentro de la tarjeta */
+        .textoFlexible {
+            /* Incluye mixins para el texto flexible */
             @include flexTextCard();
         }
     }

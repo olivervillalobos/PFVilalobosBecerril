@@ -1,24 +1,44 @@
+/* Estilos para la sección de la página de contacto */
 .pagina-contacto{
+    /* Establecer un margen superior utilizando una variable de mapa */
     margin-top: map-get($margins , margen-arriba-60px );
+
+    /* Estilos para el iframe dentro de la página de contacto */
     iframe{
+        /* Establecer altura utilizando una variable de mapa */
         height: map-get($heights , alto-350px );
     }
+
+    /* Estilos para el botón de contacto */
     .boton-contacto{
+        /* Establecer color de fondo utilizando una variable */
         background-color: $periwinkle;
+        /* Establecer ancho utilizando una variable de mapa */
         width: map-get($widths , ancho-100 );
+        /* Transición al hacer hover sobre el botón */
+        transition: 0.1s;
+        /* Estilos al hacer hover sobre el botón */
         &:hover{
-            transition: all 0s;
+            /* Reducir tamaño del botón */
             scale: 0.9;
+            /* Cambiar color del texto al hacer hover */
             color: $anti-flash-white;
         }
     }
+
+    /* Estilos para el textarea dentro de la página de contacto */
     textarea{
+        /* Establecer altura utilizando una variable de mapa */
         height: map-get($heights , alto-10rem );
     } 
-    
 }
+
+/* Estilos para la sección de la página de contacto con imagen de fondo */
 .bg-image-contacto{
+    /* Establecer imagen de fondo */
     background-image: url('https://i.imgur.com/LLDEbLl.jpg');
+    /* Centrar la imagen de fondo */
     background-position: center;
+    /* Ajustar tamaño de la imagen de fondo para cubrir todo el contenedor */
     background-size: cover;
 }

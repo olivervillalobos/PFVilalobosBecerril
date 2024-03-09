@@ -1,96 +1,113 @@
 <!DOCTYPE html>
-<!--Aqui se agrega el atributo de lenguaje para que se pueda interpretar en el idioma ingles.-->
 <html lang="en">
-    <!--En el head se agrega lo necesario para que interrete los caracteres mas comunes, el titulo de la pagina, los links a la hoja de estilos, de js, de fontawesome y el favicon-->
     <head>
+        <!-- Configuración básica de la página -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>verdadera Tijuana</title>
+        <meta name="description" content="Descubre las mejores atracciones y vida nocturna en Tijuana con nuestra guía. Explora plazas, museos y más. ¡Planifica tu escapada hoy!">
+        <!-- Palabras clave para SEO -->
+        <meta name="keywords" content="Tijuana, atracciones, vida nocturna, galería, lugares, ocio, ciudad, turismo">
+
+        <!-- Título de la página -->
+        <title>Atracciones y Vida Nocturna | verdadera Tijuana</title>
+        
+        <!-- Enlaces a hojas de estilos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/styles.css">
+        
+        <!-- Ícono de la página -->
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <script src="https://kit.fontawesome.com/031b0c1a95.js"
-            crossorigin="anonymous"></script>
+        
+        <!-- Inclusión de iconos de FontAwesome -->
+        <script src="https://kit.fontawesome.com/031b0c1a95.js" crossorigin="anonymous"></script>
     </head>
-    <!--En el body se agrega el contenido de la pagina, en este caso al body se le otorgo un color de fondo-->
     <body>
-        <!--El header contiene la barra de navegacion, en la cual inluye un logo y ligas-->
+        <!-- Encabezado de la página -->
         <header>
+            <!-- Barra de navegación -->
             <nav class="navbar navbar-expand-sm fixed-top custom-navbar">
                 <div class="container-fluid">
+                    <!-- Logo de la página -->
                     <a class="navbar-brand me-auto" href="../index.html">
                         <img class="rounded-circle" src="../assets/img/verdadera_Tijuana_500x500.png" alt="Logo de verdadera Tijuana">
                     </a>
-                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon custom-icon">
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto">
-                        <a class="nav-link mx-2" href="../index.html">Inicio</a>
-                    <a class="nav-link mx-2" href="../pages/restaurantes.html">Restaurantes</a>
-                    <a class="nav-link mx-2" href="../pages/cafeterias.html">Cafeterias</a>
-                    <a class="nav-link mx-2" href="../pages/atraccionesVidaNocturna.html">Atracciones y Vida Nocturna</a>
-                    <a class="nav-link mx-2" href="../pages/contacto.html">Contacto</a>
+                    <!-- Botón de menú desplegable para dispositivos móviles -->
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon custom-icon"></span>
+                    </button>
+                    <!-- Contenido del menú de navegación -->
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav mx-auto">
+                            <!-- Enlaces a diferentes secciones de la página -->
+                            <a class="nav-link mx-2" href="../index.html">Inicio</a>
+                            <a class="nav-link mx-2" href="../pages/restaurantes.html">Restaurantes</a>
+                            <a class="nav-link mx-2" href="../pages/cafeterias.html">Cafeterias</a>
+                            <a class="nav-link mx-2" href="../pages/atraccionesVidaNocturna.html">Atracciones y Vida Nocturna</a>
+                            <a class="nav-link mx-2" href="../pages/contacto.html">Contacto</a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </nav>
         </header>
+        
+        <!-- Contenido principal de la página -->
         <main>
+            <!-- Sección de información sobre atracciones y vida nocturna -->
             <section class="seccion-info-categoria">
                 <div class="cuadricula-contenedor">
+                    <!-- Imágenes y texto relacionado con la sección -->
                     <div class="imagen item-1">
-                        <img class="aspectoItem rounded" src="https://i.imgur.com/ahodElO.jpg"
-                        alt="Monumento del Arco de la Revolución. ">
+                        <img class="aspectoItem rounded" src="https://i.imgur.com/ahodElO.jpg" alt="Monumento del Arco de la Revolución. ">
                     </div>
                     <div class="imagen item-2">
-                        <img class="aspectoItem rounded" src="https://i.imgur.com/VeH3L8K.jpg"
-                        alt="Vista exterior de la bola. ">
+                        <img class="aspectoItem rounded" src="https://i.imgur.com/VeH3L8K.jpg" alt="Vista exterior de la bola. ">
                     </div>
                     <div class="containerInformacionCategoria texto item-3">
-                        <h2 class="display-6 fs-2">Atracciones y Vida Nocturna</h2>
-                        <p class="lead fs-5 lh-sm">Explora las atracciones y vibrante vida nocturna de
-                            Tijuana. Sumérgete en clubes animados y bares
-                            íntimos, experimenta música en vivo y gastronomía
-                            única. Disfruta la oferta deportiva que ofrece la
-                            ciudad y realiza las diferentes actividades que
-                            Tijuana ofrece para tí.</p>
+                        <h1 class="display-6 fs-2">Atracciones y Vida Nocturna</h1>
+                        <p class="lead fs-5 lh-sm">Explora las atracciones y vibrante vida nocturna de Tijuana. Sumérgete en clubes animados y bares íntimos, experimenta música en vivo y gastronomía única. Disfruta la oferta deportiva que ofrece la ciudad y realiza las diferentes actividades que Tijuana ofrece para tí.</p>
                     </div>
                     <div class="imagen item-4">
-                        <img class="aspectoItem rounded" src="https://i.imgur.com/owNXpOP.jpg"
-                        alt="Muro fronterizo entre Playas de Tijuana y Estados Unidos. ">
+                        <img class="aspectoItem rounded" src="https://i.imgur.com/owNXpOP.jpg" alt="Muro fronterizo entre Playas de Tijuana y Estados Unidos. ">
                     </div>
                 </div>
             </section>
+            
+            <!-- Divisor de categorías -->
             <div class="mx-auto rounded divisor-categorias"></div>
+            
+            <!-- Sección de galería de imágenes -->
             <section class="container-fluid">
                 <div class="galleryFlex container-galeria">
-                    <div class="cardFlex rounded item">
+                    <!-- Tarjetas de imágenes con enlaces -->
+                    <div class="cardFlex rounded item" data-aos="fade" data-aos="fade">
+                        <!-- Imagen de la tarjeta con enlace -->
                         <div class="imagen-carta">
-                        <a href="https://maps.app.goo.gl/GWoemXQhXvdK9cTJ8" target="_blank">
-                            <img class="aspectoItem" src="https://i.imgur.com/ceL1QYi.jpg"
-                                alt="Grupo de personas con trajes de apicultores. ">
-                        </a>
+                            <a href="https://maps.app.goo.gl/GWoemXQhXvdK9cTJ8" target="_blank">
+                                <img class="aspectoItem" src="https://i.imgur.com/ceL1QYi.jpg" alt="Grupo de personas con trajes de apicultores. ">
+                            </a>
+                        </div>
+                        <!-- Texto de la tarjeta -->
+                        <div class="textoFlexible card-text">
+                            <h2 class="display-6 fs-3">Dear Honey</h2>
+                            <p class="descripcion-carta lead fs-6">Un apiario con visitas guiadas y talleres diversos.</p>
+                        </div>
                     </div>
-                    <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Dear Honey</h3>
-                        <p class="descripcion-carta lead fs-6">Un apiario con visitas guiadas y talleres diversos.</p>
+                    <!-- Otras tarjetas de imágenes -->
+                    <!-- ... -->
+                    <div class="cardFlex rounded item" data-aos="fade">
+                        <div class="imagen-carta">
+                            <a href="https://maps.app.goo.gl/KLgrPU85m2pFqqYm6" target="_blank">
+                                <img class="aspectoItem" src="https://i.imgur.com/qWfoN7A.jpg"
+                                    alt="Vista desde el segundo piso de plaza Peninsula.">
+                            </a>
+                        </div>
+                        <div class="textoFlexible card-text">
+                            <h2 class="display-6 fs-3">Plaza Peninsula</h2>
+                            <p class="descripcion-carta lead fs-6">Shopping center con variedad de tiendas y restaurantes.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="cardFlex rounded item">
-                    <div class="imagen-carta">
-                        <a href="https://maps.app.goo.gl/KLgrPU85m2pFqqYm6" target="_blank">
-                            <img class="aspectoItem" src="https://i.imgur.com/qWfoN7A.jpg"
-                                alt="Vista desde el segundo piso de plaza Peninsula.">
-                        </a>
-                    </div>
-                    <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Plaza Peninsula</h3>
-                        <p class="descripcion-carta lead fs-6">Shopping center con variedad de tiendas y restaurantes.</p>
-                    </div>
-                </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/c5sqZqNnKAMifWSQ9" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/ahodElO.jpg"
@@ -98,11 +115,11 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Avenida Revolución</h3>
+                        <h2 class="display-6 fs-3">Avenida Revolución</h2>
                         <p class="descripcion-carta lead fs-6">Calle emblemática de la ciudad de Tijuana, cuenta con bares, discotecas, puntos de comida y más.</p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/QwxSjX58WAMs3uJX7" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/my86SJY.jpg"
@@ -110,11 +127,11 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Mundo Divertido</h3>
+                        <h2 class="display-6 fs-3">Mundo Divertido</h2>
                         <p class="descripcion-carta lead fs-6">Parque de diversiones con arcade, golf miniatura, laser tag, casa del terror y más.</p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/qHAbE231JZq39D1Q8" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/VeH3L8K.jpg"
@@ -122,11 +139,11 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Centro Cultural de Tijuana</h3>
+                        <h2 class="display-6 fs-3">Centro Cultural de Tijuana</h2>
                         <p class="descripcion-carta lead fs-6">Museo moderno con exposiciones temporales, festivales y obras de teatro.</p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/VNTsjn1tkBLHL66b7" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/PcMLFoW.png"
@@ -134,11 +151,11 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Fiesta Plaza</h3>
+                        <h2 class="display-6 fs-3">Fiesta Plaza</h2>
                         <p class="descripcion-carta lead fs-6">Plaza llena de bares, discotecas y karaokes.</p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/SjHuPtFxiTY1uD5Z6" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/WdM4Y3M.jpg"
@@ -146,11 +163,11 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">MULLME Museo de La Lucha Libre Mexicana</h3>
+                        <h2 class="display-6 fs-3">MULLME Museo de La Lucha Libre Mexicana</h2>
                         <p class="descripcion-carta lead fs-6">Museo con la más grande colección de máscaras, cabelleras, campeonatos, revistas, juguetes, equipos, arte y todo de Lucha Libre.</p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/aEP38WcYnqguHSuRA" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/owNXpOP.jpg"
@@ -158,11 +175,11 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Playas de Tijuana</h3>
+                        <h2 class="display-6 fs-3">Playas de Tijuana</h2>
                         <p class="descripcion-carta lead fs-6">Una playa como ninguna otra, en ella encontrarás de todo, lo que impresiona es su vista al océano pacifico y la franja fronteriza con Estados Unidos.</p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/ZdiikgTn1yzgAaHH9" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/NBjLgwC.jpg"
@@ -170,13 +187,13 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Museo del Taco</h3>
+                        <h2 class="display-6 fs-3">Museo del Taco</h2>
                         <p class="descripcion-carta lead fs-6">Un espacio con exhibiciones y salas interactivas e inmersivas
                             pensadas, diseñadas y desarrolladas para activar cada uno de los sentidos.
                             </p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/o4QRFxqM7937n8Ax6" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/wNfX9qc.jpg"
@@ -184,11 +201,11 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Museo del Trompo</h3>
+                        <h2 class="display-6 fs-3">Museo del Trompo</h2>
                         <p class="descripcion-carta lead fs-6">Museo de ciencia y tecnología con diferentes exhibiciones para niños.</p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/VBfL9Tzw4Rr35HNt8" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/BtRAdvw.jpg"
@@ -196,11 +213,11 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Estadio Caliente</h3>
+                        <h2 class="display-6 fs-3">Estadio Caliente</h2>
                         <p class="descripcion-carta lead fs-6">Estadio del equipo municipal de fútbol, Xoloitzcuintles.</p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/fjFWSM4T4kG4w5VR7" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/HbwSoof.jpg"
@@ -208,11 +225,11 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Estadio Chevron</h3>
+                        <h2 class="display-6 fs-3">Estadio Chevron</h2>
                         <p class="descripcion-carta lead fs-6">Estadio del equipo municipal de béisbol, Los Toros.</p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/59c5rNJmVXaoubqW8" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/lqVj9LO.jpg"
@@ -220,11 +237,11 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Casino y Galgódromo Caliente</h3>
+                        <h2 class="display-6 fs-3">Casino y Galgódromo Caliente</h2>
                         <p class="descripcion-carta lead fs-6">Casino, galgodromo y plaza de toros.</p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/utJ6v5pYKuBbmuPt5" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/vA9bb5h.jpg"
@@ -232,11 +249,11 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Cerro Colorado</h3>
+                        <h2 class="display-6 fs-3">Cerro Colorado</h2>
                         <p class="descripcion-carta lead fs-6">Cerro emblemático de la ciudad, se dice que por este se le dio el nombre a la ciudad.</p>
                     </div>
                 </div>
-                <div class="cardFlex rounded item">
+                <div class="cardFlex rounded item" data-aos="fade">
                     <div class="imagen-carta">
                         <a href="https://maps.app.goo.gl/nTzkLHmYJSD1t4zz7" target="_blank">
                             <img class="aspectoItem" src="https://i.imgur.com/ZPNwizw.jpg"
@@ -244,53 +261,60 @@
                         </a>
                     </div>
                     <div class="textoFlexible card-text">
-                        <h3 class="display-6 fs-3">Ruta del Maíz</h3>
+                        <h2 class="display-6 fs-3">Ruta del Maíz</h2>
                         <p class="descripcion-carta lead fs-6">Jardín temático, ofrece recorridos, sesiones de fotos y más.</p>
                     </div>
                 </div>
             </section>
         </main>
-        <!--Aqui se agrega el pie de pagina el cual contiene tres secciones.-->
+        <!-- Pie de página -->
         <footer class="w-100">
-            <section
-              class="dFlexCenter align-items-center footer-nav"
-            >
-            <a href="../index.html">Inicio</a>
-              <div class="mx-2 vr linea-recta"></div>  
-            <a href="../pages/restaurantes.html">Restaurantes</a>
-              <div class="mx-2 vr linea-recta"></div>
-              <a href="../pages/cafeterias.html">Cafeterias</a>
-              <div class="mx-2 vr linea-recta"></div>
-              <a href="../pages/atraccionesVidaNocturna.html"
-                >Atracciones y Vida Nocturna</a
-              >
-              <div class="mx-2 vr linea-recta"></div>
-              <a href="../pages/contacto.html">Contacto</a>
+            <!-- Navegación del pie de página -->
+            <section class="dFlexCenter align-items-center footer-nav">
+                <a href="../index.html">Inicio</a>
+                <div class="mx-2 vr linea-recta"></div>  
+                <a href="../pages/restaurantes.html">Restaurantes</a>
+                <div class="mx-2 vr linea-recta"></div>
+                <a href="../pages/cafeterias.html">Cafeterias</a>
+                <div class="mx-2 vr linea-recta"></div>
+                <a href="../pages/atraccionesVidaNocturna.html">Atracciones y Vida Nocturna</a>
+                <div class="mx-2 vr linea-recta"></div>
+                <a href="../pages/contacto.html">Contacto</a>
             </section>
+            
+            <!-- Redes sociales del pie de página -->
             <section class="dFlexCenter footer-rs">
-              <a href="https://www.facebook.com/" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://twitter.com/" target="_blank">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-              <a href="https://www.tiktok.com/" target="_blank">
-                <i class="fa-brands fa-tiktok"></i>
-              </a>
-              <a href="https://www.whatsapp.com/" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="https://www.youtube.com/" target="_blank">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <!-- Otros enlaces a redes sociales -->
+                <!-- ... -->
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+                  <a href="https://www.whatsapp.com/" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
             </section>
+            
+            <!-- Derechos de autor del pie de página -->
             <section class="dFlexCenter footer-cr">
-              <span>Copyright © 2024 Oliver Villalobos, Group.</span>
+                <span>Copyright © 2024 Oliver Villalobos, Group.</span>
             </section>
-          </footer>
+        </footer>
+        
+        <!-- Scripts JavaScript -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
         <script src="../js/bootstrap.bundle.min.js"></script>
         <script src="../js/script.js"></script>
     </body>
